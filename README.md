@@ -92,12 +92,13 @@ Destroying test database for alias 'default'...
 [INFO] store.views: Запрос детали товара: product_id=9999
 [WARNING] store.views: Product.DoesNotExist перехвачен. product_id=9999 не существует.
 
-5. 📂 Структура проекта
+## 5. 📂 Структура проекта
 
+```text
 DZ17_Templates/
 ├── config/                     # 📦 Настройки проекта Django
 │   ├── settings.py             # ⚙️ Конфигурация (вкл. MEDIA_ROOT/URL, LOGGING)
-│   └── urls.py                 # 🔗 Глобальная маршрутизация + раздача media
+│   └── urls.py                 # 🔗 Глобальная маршрутизация + раздача медиафайлов
 ├── store/                      # 📦 Основное приложение
 │   ├── models.py               # 📝 Модель Product (с Docstring)
 │   ├── views.py                # 👁️ Представления (с Type Hints и Logging)
