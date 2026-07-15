@@ -45,7 +45,7 @@
 
 ```mermaid
 graph TD
-    Client["🌐 Клиент / Браузер"] -->|"HTTP GET /"| Router["🔀 URL Router config/urls.py"]
+    Client["🌐 Клиент / Браузер"] -->|"HTTP GET /"| Router[" URL Router config/urls.py"]
     Router -->|"/"| ViewList["👁️ View: product_list"]
     Router -->|"/product/<id>/"| ViewDetail["👁️ View: product_detail"]
     ViewList -->|"QuerySet.all()"| Model[("🗄️ Model: Product")]
