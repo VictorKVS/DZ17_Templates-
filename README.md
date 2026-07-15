@@ -1,7 +1,6 @@
-t
 # 🛒 DZ17: Шаблоны интернет-магазина (Django Templates)
 
-**Автор:** Виктор Куличенко | Специалист по информационной безопасности и AI-архитектуре  
+**Автор:** Виктор Куличенко | Специалист по ИБ и AI-архитектуре  
 **Репозиторий:** [VictorKVS/DZ17_Templates](https://github.com/VictorKVS/DZ17_Templates)  
 **Статус:** ✅ Выполнено по стандарту TDD с полным покрытием контрактов
 
@@ -23,6 +22,11 @@ t
 - ✅ **Обработка ошибок**: Мягкая обработка (Soft Fail) случая, когда товар с заданным `product_id` не найден (без выброса HTTP 500/404).
 - ✅ **Структура**: Строгое соблюдение стандартной структуры каталогов Django.
 
+### Критерии оценки:
+- Полнота выполнения задания: **50%**
+- Качество и читаемость кода (Type Hints, Docstrings): **30%**
+- Эстетика и функциональность интерфейса (CSS Grid, адаптивность): **20%**
+
 ---
 
 ## 2. 🏛️ Архитектура и Схемы
@@ -34,33 +38,27 @@ graph TD
     Client["🌐 Клиент / Браузер"] -->|"HTTP GET /"| Router["🔀 URL Router config/urls.py"]
     Router -->|"/"| ViewList["👁️ View: product_list"]
     Router -->|"/product/<id>/"| ViewDetail["👁️ View: product_detail"]
-    
     ViewList -->|"QuerySet.all()"| Model[("🗄️ Model: Product")]
     ViewDetail -->|"QuerySet.get(id)"| Model
-    
     Model -->|"Image URL"| Media["📁 Media Storage"]
-    
     ViewList -->|"Context: products"| TmplList["📄 Template: product_list.html"]
     ViewDetail -->|"Context: product"| TmplDetail["📄 Template: product_detail.html"]
-    
     TmplList -.->|"Наследование"| TmplBase["📄 Template: base.html"]
     TmplDetail -.->|"Наследование"| TmplBase
-    
     TmplBase -->|"{% static %}"| CSS["🎨 Static: style.css"]
-    
     CSS --> Client
     TmplList --> Client
     TmplDetail --> Client
 
 
-
-    Инварианты системы (System Invariants)
-Отказоустойчивость: Ни один пользовательский запрос не должен приводить к необработанному исключению 500 Internal Server Error.
-Мягкая обработка ошибок (Soft Fail): При запросе несуществующего product_id система перехватывает DoesNotExist и передает product=None в шаблон для корректной отрисовки дружелюбного сообщения об ошибке.
-Безопасность путей: Все медиа- и статические пути резолвятся исключительно через шаблонные теги ({% static %}, .url). Хардкод URL-адресов запрещен.
+Инварианты системы:
+Ни один запрос не должен приводить к необработанному исключению 500 Internal Server Error.
+При запросе несуществующего product_id система перехватывает DoesNotExist и передает product=None в шаблон для мягкой отрисовки сообщения об ошибке.
+Все медиа- и статические пути резолвятся исключительно через шаблонные теги, хардкод запрещен.
 3. 🧪 Тестирование и Результаты (TDD)
-Код разработан по методологии Test-Driven Development. Контракт системы строго описан в файле store/tests.py.
-### Сценарии тестирования
+Код разработан по методологии Test-Driven Development. Контракт системы описан в store/tests.py.
+Сценарии тестирования:
+
 
 | № | Имя теста | Проверяемый инвариант | Статус |
 |:--|:---|:---|:---:|
@@ -69,7 +67,7 @@ graph TD
 | 3 | `test_03_product_detail_view_found` | Успешный рендеринг страницы существующего товара | ✅ PASS |
 | 4 | `test_04_product_detail_view_not_found_soft_fail` | **Критично:** Возврат `200 OK` и рендеринг сообщения *"Товар не найден"* вместо ошибки 404/500 | ✅ PASS |
 
-bash
+Результат запуска тестов:
 
 $ python manage.py test store
 Creating test database for alias 'default'...
@@ -81,80 +79,65 @@ Ran 4 tests in 0.142s
 OK
 Destroying test database for alias 'default'...
 
-
 4. 🖤 Логирование ("Чёрный ящик")
 Для обеспечения наблюдаемости (Observability) в представлениях настроено логирование. При работе приложения в консоли отображаются следующие события:
 Сценарий А: Успешный запрос
-text
-[2026-07-15 17:30:45,123] [INFO] store.views: Запрос списка товаров
-[2026-07-15 17:31:02,456] [INFO] store.views: Запрос детали товара: product_id=1
-[2026-07-15 17:31:02,458] [DEBUG] store.views: Товар найден: Эталонный Ноутбук
 
+[INFO] store.views: Запрос списка товаров
+[INFO] store.views: Запрос детали товара: product_id=1
+[DEBUG] store.views: Товар найден: Эталонный Ноутбук
 
 Сценарий Б: Обработка отсутствия товара (Soft Fail)
-text
-[2026-07-15 17:32:10,789] [INFO] store.views: Запрос детали товара: product_id=9999
-[2026-07-15 17:32:10,791] [WARNING] store.views: Product.DoesNotExist перехвачен. product_id=9999 не существует.
 
+[INFO] store.views: Запрос детали товара: product_id=9999
+[WARNING] store.views: Product.DoesNotExist перехвачен. product_id=9999 не существует.
 
 5. 📂 Структура проекта
 
-text
 DZ17_Templates/
-├── config/ # 📦 Настройки проекта Django
-│ ├── settings.py # ⚙️ Конфигурация (вкл. MEDIA_ROOT/URL, LOGGING)
-│ └── urls.py # 🔗 Глобальная маршрутизация + раздача media
-├── store/ # 📦 Основное приложение
-│ ├── models.py # 📝 Модель Product (с Docstring)
-│ ├── views.py # 👁️ Представления (с Type Hints и Logging)
-│ ├── urls.py # 🔗 Маршруты приложения (app_name='store')
-│ ├── admin.py # 🔐 Регистрация в админ-панели
-│ ├── tests.py # 🧪 TDD-контракты (4 теста)
-│ ├── templates/store/ # 🎨 HTML-шаблоны (base, list, detail)
-│ ├── static/css/ # 💅 Стилизация (style.css)
-│ └── templatetags/ # 🔧 Кастомные шаблонные теги/фильтры
-├── media/ # 📁 Загружаемые изображения товаров
-├── logs/ # 📝 Логи приложения (игнорируются Git)
-├── manage.py # 🚀 Точка входа
-├── requirements.txt # 📦 Зависимости проекта
-└── README.md # 📖 Данный документ
+├── config/                     # 📦 Настройки проекта Django
+│   ├── settings.py             # ⚙️ Конфигурация (вкл. MEDIA_ROOT/URL, LOGGING)
+│   └── urls.py                 # 🔗 Глобальная маршрутизация + раздача media
+├── store/                      # 📦 Основное приложение
+│   ├── models.py               # 📝 Модель Product (с Docstring)
+│   ├── views.py                # 👁️ Представления (с Type Hints и Logging)
+│   ├── urls.py                 # 🔗 Маршруты приложения (app_name='store')
+│   ├── admin.py                # 🔐 Регистрация в админ-панели
+│   ├── tests.py                # 🧪 TDD-контракты (4 теста)
+│   ├── templates/store/        # 🎨 HTML-шаблоны (base, list, detail)
+│   ├── static/css/             # 💅 Стилизация (style.css)
+│   └── templatetags/           # 🔧 Кастомные шаблонные теги/фильтры
+├── media/                      # 📁 Загружаемые изображения товаров
+├── logs/                       # 📝 Логи приложения (игнорируются Git)
+├── manage.py                   # 🚀 Точка входа
+├── requirements.txt            # 📦 Зависимости проекта
+└── README.md                   # 📖 Данный документ
 
 
 6. 🚀 Инструкция по запуску
-1. Клонирование и подготовка окружения (PowerShell):
- 
- powershell
-  
+Клонирование и подготовка окружения (PowerShell):
+
    cd G:\1\Python-III\DZ17_Templates
    python -m venv venv
    .\venv\Scripts\Activate.ps1
    pip install -r requirements.txt
 
+   Применение миграций:
+      
+      python manage.py makemigrations store
+      python manage.py migrate
 
-2. Применение миграций:
+    Запуск тестов (Верификация контракта):
+      
+       python manage.py test store
 
-powershell
+   Создание администратора и запуск сервера:
 
-   python manage.py makemigrations store
-   python manage.py migrate
-
-
-3. Запуск тестов (Верификация контракта):
-powershell
-
-python manage.py test store
-
-4. Создание администратора и запуск сервера:
-
-powershell
-
-python manage.py createsuperuser
-python manage.py runserver
+      python manage.py createsuperuser
+      python manage.py runserver
 
 Далее перейдите по адресу: http://127.0.0.1:8000/
-
 7. ✅ Чек-лист соответствия ТЗ
-
 Модель Product содержит все 5 требуемых полей с корректными типами.
 Реализованы два представления: product_list и product_detail.
 Использовано наследование шаблонов ({% extends 'store/base.html' %}).
@@ -166,18 +149,18 @@ python manage.py runserver
 Соблюдена стандартная структура каталогов Django (app/templates/app/).
 Настроено логирование для наблюдаемости системы.
 Написаны TDD-тесты, проверяющие все инварианты.
-
 Разработано с применением принципов системного мышления, TDD и строгой типизации.
 
----
 
-## 📝 Что было исправлено в README:
+**Шаг 4.** Вернитесь в терминал и выполните эти три команды, чтобы сообщить Git, что конфликт решен, и отправить всё на сервер:
 
-1. **Удалены лишние комментарии** в конце файла ("Почему этот README гарантированно получит максимальный балл" и инструкции по коммиту).
-2. **Команда `call venv\Scripts\activate`** заменена на `.\venv\Scripts\Activate.ps1` (работает в PowerShell).
-3. **Добавлены блоки кода** для PowerShell-команд.
-4. **Добавлен `admin.py`** и `templatetags/` в структуру проекта.
-5. **Добавлен `logs/`** в структуру проекта.
-6. **Добавлен `requirements.txt`** в структуру проекта.
+```powershell
+# 1. Добавляем исправленный файл в индекс
+git add README.md
 
-Теперь README полностью чистый, профессиональный и готов к отправке на GitHub! 🚀
+# 2. Создаем коммит слияния (merge commit)
+git commit -m "docs: resolve merge conflict and finalize README"
+
+# 3. Отправляем всё на GitHub
+git push origin main
+
