@@ -61,7 +61,7 @@ graph TD
     TmplList -.->|"Наследование"| TmplBase["📄 Template: base.html"]
     TmplDetail -.->|"Наследование"| TmplBase
     
-    TmplBase -->|"{% static %}"| CSS["🎨 Static: style.css"]
+    TmplBase -->|"{% static %}"| CSS[" Static: style.css"]
     
     CSS --> Client
     TmplList --> Client
