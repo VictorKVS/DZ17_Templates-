@@ -49,7 +49,7 @@ graph TD
     CSS --> Client
     TmplList --> Client
     TmplDetail --> Client
-
+```
 
 Инварианты системы:
 Ни один запрос не должен приводить к необработанному исключению 500 Internal Server Error.
