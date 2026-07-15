@@ -45,23 +45,17 @@
 
 ```mermaid
 graph TD
-    Client[" Клиент / Браузер"] -->|"HTTP GET /"| Router["🔀 URL Router config/urls.py"]
+    Client["🌐 Клиент / Браузер"] -->|"HTTP GET /"| Router["🔀 URL Router config/urls.py"]
     Router -->|"/"| ViewList["👁️ View: product_list"]
     Router -->|"/product/<id>/"| ViewDetail["👁️ View: product_detail"]
-    
     ViewList -->|"QuerySet.all()"| Model[("🗄️ Model: Product")]
     ViewDetail -->|"QuerySet.get(id)"| Model
-    
     Model -->|"Image URL"| Media["📁 Media Storage"]
-    
     ViewList -->|"Context: products"| TmplList["📄 Template: product_list.html"]
     ViewDetail -->|"Context: product"| TmplDetail["📄 Template: product_detail.html"]
-    
     TmplList -.->|"Наследование"| TmplBase["📄 Template: base.html"]
     TmplDetail -.->|"Наследование"| TmplBase
-    
     TmplBase -->|"{% static %}"| CSS["🎨 Static: style.css"]
-    
     CSS --> Client
     TmplList --> Client
     TmplDetail --> Client
