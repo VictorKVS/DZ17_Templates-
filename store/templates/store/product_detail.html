@@ -1,0 +1,41 @@
+{% extends 'store/base.html' %}
+
+{% block title %}
+    {% if product %}{{ product.name }}{% else %}Товар не найден{% endif %} | EliteStore
+{% endblock %}
+
+{% block content %}
+    {% if product %}
+        <article class="product-detail">
+            <a href="{% url 'store:product_list' %}" class="back-link">← Назад в каталог</a>
+
+            <div class="detail-layout">
+                <div class="detail-image">
+                    {% if product.image %}
+                        <img src="{{ product.image.url }}" alt="{{ product.name }}">
+                    {% endif %}
+                </div>
+
+                <div class="detail-info">
+                    <h1 class="detail-title">{{ product.name }}</h1>
+                    <p class="detail-price">{{ product.price|floatformat:2 }} ₽</p>
+                    <p class="detail-description">{{ product.description|linebreaks }}</p>
+
+                    <div class="detail-meta">
+                        <span>📅 Добавлен: {{ product.created_at|date:"d E Y г." }}</span>
+                    </div>
+
+                    <button class="btn btn-large btn-primary">Добавить в корзину</button>
+                </div>
+            </div>
+        </article>
+    {% else %}
+        <!-- Блок мягкой обработки ошибки (Требование ТЗ: "Обработка ошибок") -->
+        <div class="error-state">
+            <div class="error-icon">🔍</div>
+            <h2>Товар не найден</h2>
+            <p>К сожалению, запрашиваемый товар не существует или был удален из каталога.</p>
+            <a href="{% url 'store:product_list' %}" class="btn btn-primary">Перейти в каталог</a>
+        </div>
+    {% endif %}
+{% endblock %}

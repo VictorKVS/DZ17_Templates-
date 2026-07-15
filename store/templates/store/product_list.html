@@ -1,0 +1,33 @@
+{% extends 'store/base.html' %}
+
+{% block title %}Каталог товаров | EliteStore{% endblock %}
+
+{% block content %}
+    <h1 class="page-title">Наши эксклюзивные товары</h1>
+
+    <div class="product-grid">
+        {% for product in products %}
+            <article class="product-card">
+                <div class="card-img-wrapper">
+                    {% if product.image %}
+                        <img src="{{ product.image.url }}" alt="{{ product.name }}" loading="lazy">
+                    {% else %}
+                        <div class="no-img">Нет фото</div>
+                    {% endif %}
+                </div>
+                <div class="card-body">
+                    <h3 class="product-name">{{ product.name }}</h3>
+                    <!-- Фильтр floatformat:2 гарантирует 2 знака после запятой (Требование ТЗ) -->
+                    <p class="product-price">{{ product.price|floatformat:2 }} ₽</p>
+                    <a href="{% url 'store:product_detail' product.id %}" class="btn btn-primary">
+                        Подробнее →
+                    </a>
+                </div>
+            </article>
+        {% empty %}
+            <div class="empty-state">
+                <p>📦 Каталог временно пуст. Загляните позже!</p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

@@ -1,0 +1,1870 @@
+﻿╤ЄЁєъЄєЁр яряюъ Єюьр ╧рь Є№
+╤хЁшщэ√щ эюьхЁ Єюьр: ED7E-5B1B
+G:.
+ж   .gitignore
+ж   DZ (5).ipynb
+ж   manage.py
+ж   project_structure.txt
+ж   README.md
+ж   
++---config
+ж   ж   asgi.py
+ж   ж   settings.py
+ж   ж   urls.py
+ж   ж   wsgi.py
+ж   ж   __init__.py
+ж   ж   
+ж   L---__pycache__
+ж           settings.cpython-310.pyc
+ж           __init__.cpython-310.pyc
+ж           
++---logs
++---store
+ж   ж   admin.py
+ж   ж   apps.py
+ж   ж   models.py
+ж   ж   tests.py
+ж   ж   views.py
+ж   ж   __init__.py
+ж   ж   
+ж   +---migrations
+ж   ж       __init__.py
+ж   ж       
+ж   +---static
+ж   ж   L---css
+ж   +---templates
+ж   ж   L---store
+ж   L---templatetags
+ж           __init__.py
+ж           
+L---venv
+    ж   pyvenv.cfg
+    ж   
+    +---Include
+    +---Lib
+    ж   L---site-packages
+    ж       ж   distutils-precedence.pth
+    ж       ж   
+    ж       +---pip
+    ж       ж   ж   py.typed
+    ж       ж   ж   __init__.py
+    ж       ж   ж   __main__.py
+    ж       ж   ж   __pip-runner__.py
+    ж       ж   ж   
+    ж       ж   +---_internal
+    ж       ж   ж   ж   build_env.py
+    ж       ж   ж   ж   cache.py
+    ж       ж   ж   ж   configuration.py
+    ж       ж   ж   ж   exceptions.py
+    ж       ж   ж   ж   main.py
+    ж       ж   ж   ж   pyproject.py
+    ж       ж   ж   ж   self_outdated_check.py
+    ж       ж   ж   ж   wheel_builder.py
+    ж       ж   ж   ж   __init__.py
+    ж       ж   ж   ж   
+    ж       ж   ж   +---cli
+    ж       ж   ж   ж   ж   autocompletion.py
+    ж       ж   ж   ж   ж   base_command.py
+    ж       ж   ж   ж   ж   cmdoptions.py
+    ж       ж   ж   ж   ж   command_context.py
+    ж       ж   ж   ж   ж   main.py
+    ж       ж   ж   ж   ж   main_parser.py
+    ж       ж   ж   ж   ж   parser.py
+    ж       ж   ж   ж   ж   progress_bars.py
+    ж       ж   ж   ж   ж   req_command.py
+    ж       ж   ж   ж   ж   spinners.py
+    ж       ж   ж   ж   ж   status_codes.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           autocompletion.cpython-310.pyc
+    ж       ж   ж   ж           base_command.cpython-310.pyc
+    ж       ж   ж   ж           cmdoptions.cpython-310.pyc
+    ж       ж   ж   ж           command_context.cpython-310.pyc
+    ж       ж   ж   ж           main.cpython-310.pyc
+    ж       ж   ж   ж           main_parser.cpython-310.pyc
+    ж       ж   ж   ж           parser.cpython-310.pyc
+    ж       ж   ж   ж           progress_bars.cpython-310.pyc
+    ж       ж   ж   ж           req_command.cpython-310.pyc
+    ж       ж   ж   ж           spinners.cpython-310.pyc
+    ж       ж   ж   ж           status_codes.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---commands
+    ж       ж   ж   ж   ж   cache.py
+    ж       ж   ж   ж   ж   check.py
+    ж       ж   ж   ж   ж   completion.py
+    ж       ж   ж   ж   ж   configuration.py
+    ж       ж   ж   ж   ж   debug.py
+    ж       ж   ж   ж   ж   download.py
+    ж       ж   ж   ж   ж   freeze.py
+    ж       ж   ж   ж   ж   hash.py
+    ж       ж   ж   ж   ж   help.py
+    ж       ж   ж   ж   ж   index.py
+    ж       ж   ж   ж   ж   inspect.py
+    ж       ж   ж   ж   ж   install.py
+    ж       ж   ж   ж   ж   list.py
+    ж       ж   ж   ж   ж   search.py
+    ж       ж   ж   ж   ж   show.py
+    ж       ж   ж   ж   ж   uninstall.py
+    ж       ж   ж   ж   ж   wheel.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           cache.cpython-310.pyc
+    ж       ж   ж   ж           check.cpython-310.pyc
+    ж       ж   ж   ж           completion.cpython-310.pyc
+    ж       ж   ж   ж           configuration.cpython-310.pyc
+    ж       ж   ж   ж           debug.cpython-310.pyc
+    ж       ж   ж   ж           download.cpython-310.pyc
+    ж       ж   ж   ж           freeze.cpython-310.pyc
+    ж       ж   ж   ж           hash.cpython-310.pyc
+    ж       ж   ж   ж           help.cpython-310.pyc
+    ж       ж   ж   ж           index.cpython-310.pyc
+    ж       ж   ж   ж           inspect.cpython-310.pyc
+    ж       ж   ж   ж           install.cpython-310.pyc
+    ж       ж   ж   ж           list.cpython-310.pyc
+    ж       ж   ж   ж           search.cpython-310.pyc
+    ж       ж   ж   ж           show.cpython-310.pyc
+    ж       ж   ж   ж           uninstall.cpython-310.pyc
+    ж       ж   ж   ж           wheel.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---distributions
+    ж       ж   ж   ж   ж   base.py
+    ж       ж   ж   ж   ж   installed.py
+    ж       ж   ж   ж   ж   sdist.py
+    ж       ж   ж   ж   ж   wheel.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           base.cpython-310.pyc
+    ж       ж   ж   ж           installed.cpython-310.pyc
+    ж       ж   ж   ж           sdist.cpython-310.pyc
+    ж       ж   ж   ж           wheel.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---index
+    ж       ж   ж   ж   ж   collector.py
+    ж       ж   ж   ж   ж   package_finder.py
+    ж       ж   ж   ж   ж   sources.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           collector.cpython-310.pyc
+    ж       ж   ж   ж           package_finder.cpython-310.pyc
+    ж       ж   ж   ж           sources.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---locations
+    ж       ж   ж   ж   ж   base.py
+    ж       ж   ж   ж   ж   _distutils.py
+    ж       ж   ж   ж   ж   _sysconfig.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           base.cpython-310.pyc
+    ж       ж   ж   ж           _distutils.cpython-310.pyc
+    ж       ж   ж   ж           _sysconfig.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---metadata
+    ж       ж   ж   ж   ж   base.py
+    ж       ж   ж   ж   ж   pkg_resources.py
+    ж       ж   ж   ж   ж   _json.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   +---importlib
+    ж       ж   ж   ж   ж   ж   _compat.py
+    ж       ж   ж   ж   ж   ж   _dists.py
+    ж       ж   ж   ж   ж   ж   _envs.py
+    ж       ж   ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   ж   
+    ж       ж   ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж   ж           _compat.cpython-310.pyc
+    ж       ж   ж   ж   ж           _dists.cpython-310.pyc
+    ж       ж   ж   ж   ж           _envs.cpython-310.pyc
+    ж       ж   ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж   ж           
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           base.cpython-310.pyc
+    ж       ж   ж   ж           pkg_resources.cpython-310.pyc
+    ж       ж   ж   ж           _json.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---models
+    ж       ж   ж   ж   ж   candidate.py
+    ж       ж   ж   ж   ж   direct_url.py
+    ж       ж   ж   ж   ж   format_control.py
+    ж       ж   ж   ж   ж   index.py
+    ж       ж   ж   ж   ж   installation_report.py
+    ж       ж   ж   ж   ж   link.py
+    ж       ж   ж   ж   ж   scheme.py
+    ж       ж   ж   ж   ж   search_scope.py
+    ж       ж   ж   ж   ж   selection_prefs.py
+    ж       ж   ж   ж   ж   target_python.py
+    ж       ж   ж   ж   ж   wheel.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           candidate.cpython-310.pyc
+    ж       ж   ж   ж           direct_url.cpython-310.pyc
+    ж       ж   ж   ж           format_control.cpython-310.pyc
+    ж       ж   ж   ж           index.cpython-310.pyc
+    ж       ж   ж   ж           installation_report.cpython-310.pyc
+    ж       ж   ж   ж           link.cpython-310.pyc
+    ж       ж   ж   ж           scheme.cpython-310.pyc
+    ж       ж   ж   ж           search_scope.cpython-310.pyc
+    ж       ж   ж   ж           selection_prefs.cpython-310.pyc
+    ж       ж   ж   ж           target_python.cpython-310.pyc
+    ж       ж   ж   ж           wheel.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---network
+    ж       ж   ж   ж   ж   auth.py
+    ж       ж   ж   ж   ж   cache.py
+    ж       ж   ж   ж   ж   download.py
+    ж       ж   ж   ж   ж   lazy_wheel.py
+    ж       ж   ж   ж   ж   session.py
+    ж       ж   ж   ж   ж   utils.py
+    ж       ж   ж   ж   ж   xmlrpc.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           auth.cpython-310.pyc
+    ж       ж   ж   ж           cache.cpython-310.pyc
+    ж       ж   ж   ж           download.cpython-310.pyc
+    ж       ж   ж   ж           lazy_wheel.cpython-310.pyc
+    ж       ж   ж   ж           session.cpython-310.pyc
+    ж       ж   ж   ж           utils.cpython-310.pyc
+    ж       ж   ж   ж           xmlrpc.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---operations
+    ж       ж   ж   ж   ж   check.py
+    ж       ж   ж   ж   ж   freeze.py
+    ж       ж   ж   ж   ж   prepare.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   +---build
+    ж       ж   ж   ж   ж   ж   build_tracker.py
+    ж       ж   ж   ж   ж   ж   metadata.py
+    ж       ж   ж   ж   ж   ж   metadata_editable.py
+    ж       ж   ж   ж   ж   ж   metadata_legacy.py
+    ж       ж   ж   ж   ж   ж   wheel.py
+    ж       ж   ж   ж   ж   ж   wheel_editable.py
+    ж       ж   ж   ж   ж   ж   wheel_legacy.py
+    ж       ж   ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   ж   
+    ж       ж   ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж   ж           build_tracker.cpython-310.pyc
+    ж       ж   ж   ж   ж           metadata.cpython-310.pyc
+    ж       ж   ж   ж   ж           metadata_editable.cpython-310.pyc
+    ж       ж   ж   ж   ж           metadata_legacy.cpython-310.pyc
+    ж       ж   ж   ж   ж           wheel.cpython-310.pyc
+    ж       ж   ж   ж   ж           wheel_editable.cpython-310.pyc
+    ж       ж   ж   ж   ж           wheel_legacy.cpython-310.pyc
+    ж       ж   ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж   ж           
+    ж       ж   ж   ж   +---install
+    ж       ж   ж   ж   ж   ж   editable_legacy.py
+    ж       ж   ж   ж   ж   ж   legacy.py
+    ж       ж   ж   ж   ж   ж   wheel.py
+    ж       ж   ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   ж   
+    ж       ж   ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж   ж           editable_legacy.cpython-310.pyc
+    ж       ж   ж   ж   ж           legacy.cpython-310.pyc
+    ж       ж   ж   ж   ж           wheel.cpython-310.pyc
+    ж       ж   ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж   ж           
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           check.cpython-310.pyc
+    ж       ж   ж   ж           freeze.cpython-310.pyc
+    ж       ж   ж   ж           prepare.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---req
+    ж       ж   ж   ж   ж   constructors.py
+    ж       ж   ж   ж   ж   req_file.py
+    ж       ж   ж   ж   ж   req_install.py
+    ж       ж   ж   ж   ж   req_set.py
+    ж       ж   ж   ж   ж   req_uninstall.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           constructors.cpython-310.pyc
+    ж       ж   ж   ж           req_file.cpython-310.pyc
+    ж       ж   ж   ж           req_install.cpython-310.pyc
+    ж       ж   ж   ж           req_set.cpython-310.pyc
+    ж       ж   ж   ж           req_uninstall.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---resolution
+    ж       ж   ж   ж   ж   base.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   +---legacy
+    ж       ж   ж   ж   ж   ж   resolver.py
+    ж       ж   ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   ж   
+    ж       ж   ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж   ж           resolver.cpython-310.pyc
+    ж       ж   ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж   ж           
+    ж       ж   ж   ж   +---resolvelib
+    ж       ж   ж   ж   ж   ж   base.py
+    ж       ж   ж   ж   ж   ж   candidates.py
+    ж       ж   ж   ж   ж   ж   factory.py
+    ж       ж   ж   ж   ж   ж   found_candidates.py
+    ж       ж   ж   ж   ж   ж   provider.py
+    ж       ж   ж   ж   ж   ж   reporter.py
+    ж       ж   ж   ж   ж   ж   requirements.py
+    ж       ж   ж   ж   ж   ж   resolver.py
+    ж       ж   ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   ж   
+    ж       ж   ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж   ж           base.cpython-310.pyc
+    ж       ж   ж   ж   ж           candidates.cpython-310.pyc
+    ж       ж   ж   ж   ж           factory.cpython-310.pyc
+    ж       ж   ж   ж   ж           found_candidates.cpython-310.pyc
+    ж       ж   ж   ж   ж           provider.cpython-310.pyc
+    ж       ж   ж   ж   ж           reporter.cpython-310.pyc
+    ж       ж   ж   ж   ж           requirements.cpython-310.pyc
+    ж       ж   ж   ж   ж           resolver.cpython-310.pyc
+    ж       ж   ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж   ж           
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           base.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---utils
+    ж       ж   ж   ж   ж   appdirs.py
+    ж       ж   ж   ж   ж   compat.py
+    ж       ж   ж   ж   ж   compatibility_tags.py
+    ж       ж   ж   ж   ж   datetime.py
+    ж       ж   ж   ж   ж   deprecation.py
+    ж       ж   ж   ж   ж   direct_url_helpers.py
+    ж       ж   ж   ж   ж   distutils_args.py
+    ж       ж   ж   ж   ж   egg_link.py
+    ж       ж   ж   ж   ж   encoding.py
+    ж       ж   ж   ж   ж   entrypoints.py
+    ж       ж   ж   ж   ж   filesystem.py
+    ж       ж   ж   ж   ж   filetypes.py
+    ж       ж   ж   ж   ж   glibc.py
+    ж       ж   ж   ж   ж   hashes.py
+    ж       ж   ж   ж   ж   inject_securetransport.py
+    ж       ж   ж   ж   ж   logging.py
+    ж       ж   ж   ж   ж   misc.py
+    ж       ж   ж   ж   ж   models.py
+    ж       ж   ж   ж   ж   packaging.py
+    ж       ж   ж   ж   ж   setuptools_build.py
+    ж       ж   ж   ж   ж   subprocess.py
+    ж       ж   ж   ж   ж   temp_dir.py
+    ж       ж   ж   ж   ж   unpacking.py
+    ж       ж   ж   ж   ж   urls.py
+    ж       ж   ж   ж   ж   virtualenv.py
+    ж       ж   ж   ж   ж   wheel.py
+    ж       ж   ж   ж   ж   _log.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           appdirs.cpython-310.pyc
+    ж       ж   ж   ж           compat.cpython-310.pyc
+    ж       ж   ж   ж           compatibility_tags.cpython-310.pyc
+    ж       ж   ж   ж           datetime.cpython-310.pyc
+    ж       ж   ж   ж           deprecation.cpython-310.pyc
+    ж       ж   ж   ж           direct_url_helpers.cpython-310.pyc
+    ж       ж   ж   ж           distutils_args.cpython-310.pyc
+    ж       ж   ж   ж           egg_link.cpython-310.pyc
+    ж       ж   ж   ж           encoding.cpython-310.pyc
+    ж       ж   ж   ж           entrypoints.cpython-310.pyc
+    ж       ж   ж   ж           filesystem.cpython-310.pyc
+    ж       ж   ж   ж           filetypes.cpython-310.pyc
+    ж       ж   ж   ж           glibc.cpython-310.pyc
+    ж       ж   ж   ж           hashes.cpython-310.pyc
+    ж       ж   ж   ж           inject_securetransport.cpython-310.pyc
+    ж       ж   ж   ж           logging.cpython-310.pyc
+    ж       ж   ж   ж           misc.cpython-310.pyc
+    ж       ж   ж   ж           models.cpython-310.pyc
+    ж       ж   ж   ж           packaging.cpython-310.pyc
+    ж       ж   ж   ж           setuptools_build.cpython-310.pyc
+    ж       ж   ж   ж           subprocess.cpython-310.pyc
+    ж       ж   ж   ж           temp_dir.cpython-310.pyc
+    ж       ж   ж   ж           unpacking.cpython-310.pyc
+    ж       ж   ж   ж           urls.cpython-310.pyc
+    ж       ж   ж   ж           virtualenv.cpython-310.pyc
+    ж       ж   ж   ж           wheel.cpython-310.pyc
+    ж       ж   ж   ж           _log.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---vcs
+    ж       ж   ж   ж   ж   bazaar.py
+    ж       ж   ж   ж   ж   git.py
+    ж       ж   ж   ж   ж   mercurial.py
+    ж       ж   ж   ж   ж   subversion.py
+    ж       ж   ж   ж   ж   versioncontrol.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           bazaar.cpython-310.pyc
+    ж       ж   ж   ж           git.cpython-310.pyc
+    ж       ж   ж   ж           mercurial.cpython-310.pyc
+    ж       ж   ж   ж           subversion.cpython-310.pyc
+    ж       ж   ж   ж           versioncontrol.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   L---__pycache__
+    ж       ж   ж           build_env.cpython-310.pyc
+    ж       ж   ж           cache.cpython-310.pyc
+    ж       ж   ж           configuration.cpython-310.pyc
+    ж       ж   ж           exceptions.cpython-310.pyc
+    ж       ж   ж           main.cpython-310.pyc
+    ж       ж   ж           pyproject.cpython-310.pyc
+    ж       ж   ж           self_outdated_check.cpython-310.pyc
+    ж       ж   ж           wheel_builder.cpython-310.pyc
+    ж       ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж           
+    ж       ж   +---_vendor
+    ж       ж   ж   ж   six.py
+    ж       ж   ж   ж   typing_extensions.py
+    ж       ж   ж   ж   vendor.txt
+    ж       ж   ж   ж   __init__.py
+    ж       ж   ж   ж   
+    ж       ж   ж   +---cachecontrol
+    ж       ж   ж   ж   ж   adapter.py
+    ж       ж   ж   ж   ж   cache.py
+    ж       ж   ж   ж   ж   compat.py
+    ж       ж   ж   ж   ж   controller.py
+    ж       ж   ж   ж   ж   filewrapper.py
+    ж       ж   ж   ж   ж   heuristics.py
+    ж       ж   ж   ж   ж   serialize.py
+    ж       ж   ж   ж   ж   wrapper.py
+    ж       ж   ж   ж   ж   _cmd.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   +---caches
+    ж       ж   ж   ж   ж   ж   file_cache.py
+    ж       ж   ж   ж   ж   ж   redis_cache.py
+    ж       ж   ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   ж   
+    ж       ж   ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж   ж           file_cache.cpython-310.pyc
+    ж       ж   ж   ж   ж           redis_cache.cpython-310.pyc
+    ж       ж   ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж   ж           
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           adapter.cpython-310.pyc
+    ж       ж   ж   ж           cache.cpython-310.pyc
+    ж       ж   ж   ж           compat.cpython-310.pyc
+    ж       ж   ж   ж           controller.cpython-310.pyc
+    ж       ж   ж   ж           filewrapper.cpython-310.pyc
+    ж       ж   ж   ж           heuristics.cpython-310.pyc
+    ж       ж   ж   ж           serialize.cpython-310.pyc
+    ж       ж   ж   ж           wrapper.cpython-310.pyc
+    ж       ж   ж   ж           _cmd.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---certifi
+    ж       ж   ж   ж   ж   cacert.pem
+    ж       ж   ж   ж   ж   core.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   __main__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           core.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           __main__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---chardet
+    ж       ж   ж   ж   ж   big5freq.py
+    ж       ж   ж   ж   ж   big5prober.py
+    ж       ж   ж   ж   ж   chardistribution.py
+    ж       ж   ж   ж   ж   charsetgroupprober.py
+    ж       ж   ж   ж   ж   charsetprober.py
+    ж       ж   ж   ж   ж   codingstatemachine.py
+    ж       ж   ж   ж   ж   codingstatemachinedict.py
+    ж       ж   ж   ж   ж   cp949prober.py
+    ж       ж   ж   ж   ж   enums.py
+    ж       ж   ж   ж   ж   escprober.py
+    ж       ж   ж   ж   ж   escsm.py
+    ж       ж   ж   ж   ж   eucjpprober.py
+    ж       ж   ж   ж   ж   euckrfreq.py
+    ж       ж   ж   ж   ж   euckrprober.py
+    ж       ж   ж   ж   ж   euctwfreq.py
+    ж       ж   ж   ж   ж   euctwprober.py
+    ж       ж   ж   ж   ж   gb2312freq.py
+    ж       ж   ж   ж   ж   gb2312prober.py
+    ж       ж   ж   ж   ж   hebrewprober.py
+    ж       ж   ж   ж   ж   jisfreq.py
+    ж       ж   ж   ж   ж   johabfreq.py
+    ж       ж   ж   ж   ж   johabprober.py
+    ж       ж   ж   ж   ж   jpcntx.py
+    ж       ж   ж   ж   ж   langbulgarianmodel.py
+    ж       ж   ж   ж   ж   langgreekmodel.py
+    ж       ж   ж   ж   ж   langhebrewmodel.py
+    ж       ж   ж   ж   ж   langhungarianmodel.py
+    ж       ж   ж   ж   ж   langrussianmodel.py
+    ж       ж   ж   ж   ж   langthaimodel.py
+    ж       ж   ж   ж   ж   langturkishmodel.py
+    ж       ж   ж   ж   ж   latin1prober.py
+    ж       ж   ж   ж   ж   macromanprober.py
+    ж       ж   ж   ж   ж   mbcharsetprober.py
+    ж       ж   ж   ж   ж   mbcsgroupprober.py
+    ж       ж   ж   ж   ж   mbcssm.py
+    ж       ж   ж   ж   ж   resultdict.py
+    ж       ж   ж   ж   ж   sbcharsetprober.py
+    ж       ж   ж   ж   ж   sbcsgroupprober.py
+    ж       ж   ж   ж   ж   sjisprober.py
+    ж       ж   ж   ж   ж   universaldetector.py
+    ж       ж   ж   ж   ж   utf1632prober.py
+    ж       ж   ж   ж   ж   utf8prober.py
+    ж       ж   ж   ж   ж   version.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   +---cli
+    ж       ж   ж   ж   ж   ж   chardetect.py
+    ж       ж   ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   ж   
+    ж       ж   ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж   ж           chardetect.cpython-310.pyc
+    ж       ж   ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж   ж           
+    ж       ж   ж   ж   +---metadata
+    ж       ж   ж   ж   ж   ж   languages.py
+    ж       ж   ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   ж   
+    ж       ж   ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж   ж           languages.cpython-310.pyc
+    ж       ж   ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж   ж           
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           big5freq.cpython-310.pyc
+    ж       ж   ж   ж           big5prober.cpython-310.pyc
+    ж       ж   ж   ж           chardistribution.cpython-310.pyc
+    ж       ж   ж   ж           charsetgroupprober.cpython-310.pyc
+    ж       ж   ж   ж           charsetprober.cpython-310.pyc
+    ж       ж   ж   ж           codingstatemachine.cpython-310.pyc
+    ж       ж   ж   ж           codingstatemachinedict.cpython-310.pyc
+    ж       ж   ж   ж           cp949prober.cpython-310.pyc
+    ж       ж   ж   ж           enums.cpython-310.pyc
+    ж       ж   ж   ж           escprober.cpython-310.pyc
+    ж       ж   ж   ж           escsm.cpython-310.pyc
+    ж       ж   ж   ж           eucjpprober.cpython-310.pyc
+    ж       ж   ж   ж           euckrfreq.cpython-310.pyc
+    ж       ж   ж   ж           euckrprober.cpython-310.pyc
+    ж       ж   ж   ж           euctwfreq.cpython-310.pyc
+    ж       ж   ж   ж           euctwprober.cpython-310.pyc
+    ж       ж   ж   ж           gb2312freq.cpython-310.pyc
+    ж       ж   ж   ж           gb2312prober.cpython-310.pyc
+    ж       ж   ж   ж           hebrewprober.cpython-310.pyc
+    ж       ж   ж   ж           jisfreq.cpython-310.pyc
+    ж       ж   ж   ж           johabfreq.cpython-310.pyc
+    ж       ж   ж   ж           johabprober.cpython-310.pyc
+    ж       ж   ж   ж           jpcntx.cpython-310.pyc
+    ж       ж   ж   ж           langbulgarianmodel.cpython-310.pyc
+    ж       ж   ж   ж           langgreekmodel.cpython-310.pyc
+    ж       ж   ж   ж           langhebrewmodel.cpython-310.pyc
+    ж       ж   ж   ж           langhungarianmodel.cpython-310.pyc
+    ж       ж   ж   ж           langrussianmodel.cpython-310.pyc
+    ж       ж   ж   ж           langthaimodel.cpython-310.pyc
+    ж       ж   ж   ж           langturkishmodel.cpython-310.pyc
+    ж       ж   ж   ж           latin1prober.cpython-310.pyc
+    ж       ж   ж   ж           macromanprober.cpython-310.pyc
+    ж       ж   ж   ж           mbcharsetprober.cpython-310.pyc
+    ж       ж   ж   ж           mbcsgroupprober.cpython-310.pyc
+    ж       ж   ж   ж           mbcssm.cpython-310.pyc
+    ж       ж   ж   ж           resultdict.cpython-310.pyc
+    ж       ж   ж   ж           sbcharsetprober.cpython-310.pyc
+    ж       ж   ж   ж           sbcsgroupprober.cpython-310.pyc
+    ж       ж   ж   ж           sjisprober.cpython-310.pyc
+    ж       ж   ж   ж           universaldetector.cpython-310.pyc
+    ж       ж   ж   ж           utf1632prober.cpython-310.pyc
+    ж       ж   ж   ж           utf8prober.cpython-310.pyc
+    ж       ж   ж   ж           version.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---colorama
+    ж       ж   ж   ж   ж   ansi.py
+    ж       ж   ж   ж   ж   ansitowin32.py
+    ж       ж   ж   ж   ж   initialise.py
+    ж       ж   ж   ж   ж   win32.py
+    ж       ж   ж   ж   ж   winterm.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   +---tests
+    ж       ж   ж   ж   ж   ж   ansitowin32_test.py
+    ж       ж   ж   ж   ж   ж   ansi_test.py
+    ж       ж   ж   ж   ж   ж   initialise_test.py
+    ж       ж   ж   ж   ж   ж   isatty_test.py
+    ж       ж   ж   ж   ж   ж   utils.py
+    ж       ж   ж   ж   ж   ж   winterm_test.py
+    ж       ж   ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   ж   
+    ж       ж   ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж   ж           ansitowin32_test.cpython-310.pyc
+    ж       ж   ж   ж   ж           ansi_test.cpython-310.pyc
+    ж       ж   ж   ж   ж           initialise_test.cpython-310.pyc
+    ж       ж   ж   ж   ж           isatty_test.cpython-310.pyc
+    ж       ж   ж   ж   ж           utils.cpython-310.pyc
+    ж       ж   ж   ж   ж           winterm_test.cpython-310.pyc
+    ж       ж   ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж   ж           
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           ansi.cpython-310.pyc
+    ж       ж   ж   ж           ansitowin32.cpython-310.pyc
+    ж       ж   ж   ж           initialise.cpython-310.pyc
+    ж       ж   ж   ж           win32.cpython-310.pyc
+    ж       ж   ж   ж           winterm.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---distlib
+    ж       ж   ж   ж   ж   compat.py
+    ж       ж   ж   ж   ж   database.py
+    ж       ж   ж   ж   ж   index.py
+    ж       ж   ж   ж   ж   locators.py
+    ж       ж   ж   ж   ж   manifest.py
+    ж       ж   ж   ж   ж   markers.py
+    ж       ж   ж   ж   ж   metadata.py
+    ж       ж   ж   ж   ж   resources.py
+    ж       ж   ж   ж   ж   scripts.py
+    ж       ж   ж   ж   ж   t32.exe
+    ж       ж   ж   ж   ж   t64-arm.exe
+    ж       ж   ж   ж   ж   t64.exe
+    ж       ж   ж   ж   ж   util.py
+    ж       ж   ж   ж   ж   version.py
+    ж       ж   ж   ж   ж   w32.exe
+    ж       ж   ж   ж   ж   w64-arm.exe
+    ж       ж   ж   ж   ж   w64.exe
+    ж       ж   ж   ж   ж   wheel.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           compat.cpython-310.pyc
+    ж       ж   ж   ж           database.cpython-310.pyc
+    ж       ж   ж   ж           index.cpython-310.pyc
+    ж       ж   ж   ж           locators.cpython-310.pyc
+    ж       ж   ж   ж           manifest.cpython-310.pyc
+    ж       ж   ж   ж           markers.cpython-310.pyc
+    ж       ж   ж   ж           metadata.cpython-310.pyc
+    ж       ж   ж   ж           resources.cpython-310.pyc
+    ж       ж   ж   ж           scripts.cpython-310.pyc
+    ж       ж   ж   ж           util.cpython-310.pyc
+    ж       ж   ж   ж           version.cpython-310.pyc
+    ж       ж   ж   ж           wheel.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---distro
+    ж       ж   ж   ж   ж   distro.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   __main__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           distro.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           __main__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---idna
+    ж       ж   ж   ж   ж   codec.py
+    ж       ж   ж   ж   ж   compat.py
+    ж       ж   ж   ж   ж   core.py
+    ж       ж   ж   ж   ж   idnadata.py
+    ж       ж   ж   ж   ж   intranges.py
+    ж       ж   ж   ж   ж   package_data.py
+    ж       ж   ж   ж   ж   uts46data.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           codec.cpython-310.pyc
+    ж       ж   ж   ж           compat.cpython-310.pyc
+    ж       ж   ж   ж           core.cpython-310.pyc
+    ж       ж   ж   ж           idnadata.cpython-310.pyc
+    ж       ж   ж   ж           intranges.cpython-310.pyc
+    ж       ж   ж   ж           package_data.cpython-310.pyc
+    ж       ж   ж   ж           uts46data.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---msgpack
+    ж       ж   ж   ж   ж   exceptions.py
+    ж       ж   ж   ж   ж   ext.py
+    ж       ж   ж   ж   ж   fallback.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           exceptions.cpython-310.pyc
+    ж       ж   ж   ж           ext.cpython-310.pyc
+    ж       ж   ж   ж           fallback.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---packaging
+    ж       ж   ж   ж   ж   markers.py
+    ж       ж   ж   ж   ж   requirements.py
+    ж       ж   ж   ж   ж   specifiers.py
+    ж       ж   ж   ж   ж   tags.py
+    ж       ж   ж   ж   ж   utils.py
+    ж       ж   ж   ж   ж   version.py
+    ж       ж   ж   ж   ж   _manylinux.py
+    ж       ж   ж   ж   ж   _musllinux.py
+    ж       ж   ж   ж   ж   _structures.py
+    ж       ж   ж   ж   ж   __about__.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           markers.cpython-310.pyc
+    ж       ж   ж   ж           requirements.cpython-310.pyc
+    ж       ж   ж   ж           specifiers.cpython-310.pyc
+    ж       ж   ж   ж           tags.cpython-310.pyc
+    ж       ж   ж   ж           utils.cpython-310.pyc
+    ж       ж   ж   ж           version.cpython-310.pyc
+    ж       ж   ж   ж           _manylinux.cpython-310.pyc
+    ж       ж   ж   ж           _musllinux.cpython-310.pyc
+    ж       ж   ж   ж           _structures.cpython-310.pyc
+    ж       ж   ж   ж           __about__.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---pkg_resources
+    ж       ж   ж   ж   ж   py31compat.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           py31compat.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---platformdirs
+    ж       ж   ж   ж   ж   android.py
+    ж       ж   ж   ж   ж   api.py
+    ж       ж   ж   ж   ж   macos.py
+    ж       ж   ж   ж   ж   unix.py
+    ж       ж   ж   ж   ж   version.py
+    ж       ж   ж   ж   ж   windows.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   __main__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           android.cpython-310.pyc
+    ж       ж   ж   ж           api.cpython-310.pyc
+    ж       ж   ж   ж           macos.cpython-310.pyc
+    ж       ж   ж   ж           unix.cpython-310.pyc
+    ж       ж   ж   ж           version.cpython-310.pyc
+    ж       ж   ж   ж           windows.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           __main__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---pygments
+    ж       ж   ж   ж   ж   cmdline.py
+    ж       ж   ж   ж   ж   console.py
+    ж       ж   ж   ж   ж   filter.py
+    ж       ж   ж   ж   ж   formatter.py
+    ж       ж   ж   ж   ж   lexer.py
+    ж       ж   ж   ж   ж   modeline.py
+    ж       ж   ж   ж   ж   plugin.py
+    ж       ж   ж   ж   ж   regexopt.py
+    ж       ж   ж   ж   ж   scanner.py
+    ж       ж   ж   ж   ж   sphinxext.py
+    ж       ж   ж   ж   ж   style.py
+    ж       ж   ж   ж   ж   token.py
+    ж       ж   ж   ж   ж   unistring.py
+    ж       ж   ж   ж   ж   util.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   __main__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   +---filters
+    ж       ж   ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   ж   
+    ж       ж   ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж   ж           
+    ж       ж   ж   ж   +---formatters
+    ж       ж   ж   ж   ж   ж   bbcode.py
+    ж       ж   ж   ж   ж   ж   groff.py
+    ж       ж   ж   ж   ж   ж   html.py
+    ж       ж   ж   ж   ж   ж   img.py
+    ж       ж   ж   ж   ж   ж   irc.py
+    ж       ж   ж   ж   ж   ж   latex.py
+    ж       ж   ж   ж   ж   ж   other.py
+    ж       ж   ж   ж   ж   ж   pangomarkup.py
+    ж       ж   ж   ж   ж   ж   rtf.py
+    ж       ж   ж   ж   ж   ж   svg.py
+    ж       ж   ж   ж   ж   ж   terminal.py
+    ж       ж   ж   ж   ж   ж   terminal256.py
+    ж       ж   ж   ж   ж   ж   _mapping.py
+    ж       ж   ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   ж   
+    ж       ж   ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж   ж           bbcode.cpython-310.pyc
+    ж       ж   ж   ж   ж           groff.cpython-310.pyc
+    ж       ж   ж   ж   ж           html.cpython-310.pyc
+    ж       ж   ж   ж   ж           img.cpython-310.pyc
+    ж       ж   ж   ж   ж           irc.cpython-310.pyc
+    ж       ж   ж   ж   ж           latex.cpython-310.pyc
+    ж       ж   ж   ж   ж           other.cpython-310.pyc
+    ж       ж   ж   ж   ж           pangomarkup.cpython-310.pyc
+    ж       ж   ж   ж   ж           rtf.cpython-310.pyc
+    ж       ж   ж   ж   ж           svg.cpython-310.pyc
+    ж       ж   ж   ж   ж           terminal.cpython-310.pyc
+    ж       ж   ж   ж   ж           terminal256.cpython-310.pyc
+    ж       ж   ж   ж   ж           _mapping.cpython-310.pyc
+    ж       ж   ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж   ж           
+    ж       ж   ж   ж   +---lexers
+    ж       ж   ж   ж   ж   ж   python.py
+    ж       ж   ж   ж   ж   ж   _mapping.py
+    ж       ж   ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   ж   
+    ж       ж   ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж   ж           python.cpython-310.pyc
+    ж       ж   ж   ж   ж           _mapping.cpython-310.pyc
+    ж       ж   ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж   ж           
+    ж       ж   ж   ж   +---styles
+    ж       ж   ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   ж   
+    ж       ж   ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж   ж           
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           cmdline.cpython-310.pyc
+    ж       ж   ж   ж           console.cpython-310.pyc
+    ж       ж   ж   ж           filter.cpython-310.pyc
+    ж       ж   ж   ж           formatter.cpython-310.pyc
+    ж       ж   ж   ж           lexer.cpython-310.pyc
+    ж       ж   ж   ж           modeline.cpython-310.pyc
+    ж       ж   ж   ж           plugin.cpython-310.pyc
+    ж       ж   ж   ж           regexopt.cpython-310.pyc
+    ж       ж   ж   ж           scanner.cpython-310.pyc
+    ж       ж   ж   ж           sphinxext.cpython-310.pyc
+    ж       ж   ж   ж           style.cpython-310.pyc
+    ж       ж   ж   ж           token.cpython-310.pyc
+    ж       ж   ж   ж           unistring.cpython-310.pyc
+    ж       ж   ж   ж           util.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           __main__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---pyparsing
+    ж       ж   ж   ж   ж   actions.py
+    ж       ж   ж   ж   ж   common.py
+    ж       ж   ж   ж   ж   core.py
+    ж       ж   ж   ж   ж   exceptions.py
+    ж       ж   ж   ж   ж   helpers.py
+    ж       ж   ж   ж   ж   results.py
+    ж       ж   ж   ж   ж   testing.py
+    ж       ж   ж   ж   ж   unicode.py
+    ж       ж   ж   ж   ж   util.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   +---diagram
+    ж       ж   ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   ж   
+    ж       ж   ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж   ж           
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           actions.cpython-310.pyc
+    ж       ж   ж   ж           common.cpython-310.pyc
+    ж       ж   ж   ж           core.cpython-310.pyc
+    ж       ж   ж   ж           exceptions.cpython-310.pyc
+    ж       ж   ж   ж           helpers.cpython-310.pyc
+    ж       ж   ж   ж           results.cpython-310.pyc
+    ж       ж   ж   ж           testing.cpython-310.pyc
+    ж       ж   ж   ж           unicode.cpython-310.pyc
+    ж       ж   ж   ж           util.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---pyproject_hooks
+    ж       ж   ж   ж   ж   _compat.py
+    ж       ж   ж   ж   ж   _impl.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   +---_in_process
+    ж       ж   ж   ж   ж   ж   _in_process.py
+    ж       ж   ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   ж   
+    ж       ж   ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж   ж           _in_process.cpython-310.pyc
+    ж       ж   ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж   ж           
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           _compat.cpython-310.pyc
+    ж       ж   ж   ж           _impl.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---requests
+    ж       ж   ж   ж   ж   adapters.py
+    ж       ж   ж   ж   ж   api.py
+    ж       ж   ж   ж   ж   auth.py
+    ж       ж   ж   ж   ж   certs.py
+    ж       ж   ж   ж   ж   compat.py
+    ж       ж   ж   ж   ж   cookies.py
+    ж       ж   ж   ж   ж   exceptions.py
+    ж       ж   ж   ж   ж   help.py
+    ж       ж   ж   ж   ж   hooks.py
+    ж       ж   ж   ж   ж   models.py
+    ж       ж   ж   ж   ж   packages.py
+    ж       ж   ж   ж   ж   sessions.py
+    ж       ж   ж   ж   ж   status_codes.py
+    ж       ж   ж   ж   ж   structures.py
+    ж       ж   ж   ж   ж   utils.py
+    ж       ж   ж   ж   ж   _internal_utils.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   __version__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           adapters.cpython-310.pyc
+    ж       ж   ж   ж           api.cpython-310.pyc
+    ж       ж   ж   ж           auth.cpython-310.pyc
+    ж       ж   ж   ж           certs.cpython-310.pyc
+    ж       ж   ж   ж           compat.cpython-310.pyc
+    ж       ж   ж   ж           cookies.cpython-310.pyc
+    ж       ж   ж   ж           exceptions.cpython-310.pyc
+    ж       ж   ж   ж           help.cpython-310.pyc
+    ж       ж   ж   ж           hooks.cpython-310.pyc
+    ж       ж   ж   ж           models.cpython-310.pyc
+    ж       ж   ж   ж           packages.cpython-310.pyc
+    ж       ж   ж   ж           sessions.cpython-310.pyc
+    ж       ж   ж   ж           status_codes.cpython-310.pyc
+    ж       ж   ж   ж           structures.cpython-310.pyc
+    ж       ж   ж   ж           utils.cpython-310.pyc
+    ж       ж   ж   ж           _internal_utils.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           __version__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---resolvelib
+    ж       ж   ж   ж   ж   providers.py
+    ж       ж   ж   ж   ж   reporters.py
+    ж       ж   ж   ж   ж   resolvers.py
+    ж       ж   ж   ж   ж   structs.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   +---compat
+    ж       ж   ж   ж   ж   ж   collections_abc.py
+    ж       ж   ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   ж   
+    ж       ж   ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж   ж           collections_abc.cpython-310.pyc
+    ж       ж   ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж   ж           
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           providers.cpython-310.pyc
+    ж       ж   ж   ж           reporters.cpython-310.pyc
+    ж       ж   ж   ж           resolvers.cpython-310.pyc
+    ж       ж   ж   ж           structs.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---rich
+    ж       ж   ж   ж   ж   abc.py
+    ж       ж   ж   ж   ж   align.py
+    ж       ж   ж   ж   ж   ansi.py
+    ж       ж   ж   ж   ж   bar.py
+    ж       ж   ж   ж   ж   box.py
+    ж       ж   ж   ж   ж   cells.py
+    ж       ж   ж   ж   ж   color.py
+    ж       ж   ж   ж   ж   color_triplet.py
+    ж       ж   ж   ж   ж   columns.py
+    ж       ж   ж   ж   ж   console.py
+    ж       ж   ж   ж   ж   constrain.py
+    ж       ж   ж   ж   ж   containers.py
+    ж       ж   ж   ж   ж   control.py
+    ж       ж   ж   ж   ж   default_styles.py
+    ж       ж   ж   ж   ж   diagnose.py
+    ж       ж   ж   ж   ж   emoji.py
+    ж       ж   ж   ж   ж   errors.py
+    ж       ж   ж   ж   ж   filesize.py
+    ж       ж   ж   ж   ж   file_proxy.py
+    ж       ж   ж   ж   ж   highlighter.py
+    ж       ж   ж   ж   ж   json.py
+    ж       ж   ж   ж   ж   jupyter.py
+    ж       ж   ж   ж   ж   layout.py
+    ж       ж   ж   ж   ж   live.py
+    ж       ж   ж   ж   ж   live_render.py
+    ж       ж   ж   ж   ж   logging.py
+    ж       ж   ж   ж   ж   markup.py
+    ж       ж   ж   ж   ж   measure.py
+    ж       ж   ж   ж   ж   padding.py
+    ж       ж   ж   ж   ж   pager.py
+    ж       ж   ж   ж   ж   palette.py
+    ж       ж   ж   ж   ж   panel.py
+    ж       ж   ж   ж   ж   pretty.py
+    ж       ж   ж   ж   ж   progress.py
+    ж       ж   ж   ж   ж   progress_bar.py
+    ж       ж   ж   ж   ж   prompt.py
+    ж       ж   ж   ж   ж   protocol.py
+    ж       ж   ж   ж   ж   region.py
+    ж       ж   ж   ж   ж   repr.py
+    ж       ж   ж   ж   ж   rule.py
+    ж       ж   ж   ж   ж   scope.py
+    ж       ж   ж   ж   ж   screen.py
+    ж       ж   ж   ж   ж   segment.py
+    ж       ж   ж   ж   ж   spinner.py
+    ж       ж   ж   ж   ж   status.py
+    ж       ж   ж   ж   ж   style.py
+    ж       ж   ж   ж   ж   styled.py
+    ж       ж   ж   ж   ж   syntax.py
+    ж       ж   ж   ж   ж   table.py
+    ж       ж   ж   ж   ж   terminal_theme.py
+    ж       ж   ж   ж   ж   text.py
+    ж       ж   ж   ж   ж   theme.py
+    ж       ж   ж   ж   ж   themes.py
+    ж       ж   ж   ж   ж   traceback.py
+    ж       ж   ж   ж   ж   tree.py
+    ж       ж   ж   ж   ж   _cell_widths.py
+    ж       ж   ж   ж   ж   _emoji_codes.py
+    ж       ж   ж   ж   ж   _emoji_replace.py
+    ж       ж   ж   ж   ж   _export_format.py
+    ж       ж   ж   ж   ж   _extension.py
+    ж       ж   ж   ж   ж   _inspect.py
+    ж       ж   ж   ж   ж   _log_render.py
+    ж       ж   ж   ж   ж   _loop.py
+    ж       ж   ж   ж   ж   _null_file.py
+    ж       ж   ж   ж   ж   _palettes.py
+    ж       ж   ж   ж   ж   _pick.py
+    ж       ж   ж   ж   ж   _ratio.py
+    ж       ж   ж   ж   ж   _spinners.py
+    ж       ж   ж   ж   ж   _stack.py
+    ж       ж   ж   ж   ж   _timer.py
+    ж       ж   ж   ж   ж   _win32_console.py
+    ж       ж   ж   ж   ж   _windows.py
+    ж       ж   ж   ж   ж   _windows_renderer.py
+    ж       ж   ж   ж   ж   _wrap.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   __main__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           abc.cpython-310.pyc
+    ж       ж   ж   ж           align.cpython-310.pyc
+    ж       ж   ж   ж           ansi.cpython-310.pyc
+    ж       ж   ж   ж           bar.cpython-310.pyc
+    ж       ж   ж   ж           box.cpython-310.pyc
+    ж       ж   ж   ж           cells.cpython-310.pyc
+    ж       ж   ж   ж           color.cpython-310.pyc
+    ж       ж   ж   ж           color_triplet.cpython-310.pyc
+    ж       ж   ж   ж           columns.cpython-310.pyc
+    ж       ж   ж   ж           console.cpython-310.pyc
+    ж       ж   ж   ж           constrain.cpython-310.pyc
+    ж       ж   ж   ж           containers.cpython-310.pyc
+    ж       ж   ж   ж           control.cpython-310.pyc
+    ж       ж   ж   ж           default_styles.cpython-310.pyc
+    ж       ж   ж   ж           diagnose.cpython-310.pyc
+    ж       ж   ж   ж           emoji.cpython-310.pyc
+    ж       ж   ж   ж           errors.cpython-310.pyc
+    ж       ж   ж   ж           filesize.cpython-310.pyc
+    ж       ж   ж   ж           file_proxy.cpython-310.pyc
+    ж       ж   ж   ж           highlighter.cpython-310.pyc
+    ж       ж   ж   ж           json.cpython-310.pyc
+    ж       ж   ж   ж           jupyter.cpython-310.pyc
+    ж       ж   ж   ж           layout.cpython-310.pyc
+    ж       ж   ж   ж           live.cpython-310.pyc
+    ж       ж   ж   ж           live_render.cpython-310.pyc
+    ж       ж   ж   ж           logging.cpython-310.pyc
+    ж       ж   ж   ж           markup.cpython-310.pyc
+    ж       ж   ж   ж           measure.cpython-310.pyc
+    ж       ж   ж   ж           padding.cpython-310.pyc
+    ж       ж   ж   ж           pager.cpython-310.pyc
+    ж       ж   ж   ж           palette.cpython-310.pyc
+    ж       ж   ж   ж           panel.cpython-310.pyc
+    ж       ж   ж   ж           pretty.cpython-310.pyc
+    ж       ж   ж   ж           progress.cpython-310.pyc
+    ж       ж   ж   ж           progress_bar.cpython-310.pyc
+    ж       ж   ж   ж           prompt.cpython-310.pyc
+    ж       ж   ж   ж           protocol.cpython-310.pyc
+    ж       ж   ж   ж           region.cpython-310.pyc
+    ж       ж   ж   ж           repr.cpython-310.pyc
+    ж       ж   ж   ж           rule.cpython-310.pyc
+    ж       ж   ж   ж           scope.cpython-310.pyc
+    ж       ж   ж   ж           screen.cpython-310.pyc
+    ж       ж   ж   ж           segment.cpython-310.pyc
+    ж       ж   ж   ж           spinner.cpython-310.pyc
+    ж       ж   ж   ж           status.cpython-310.pyc
+    ж       ж   ж   ж           style.cpython-310.pyc
+    ж       ж   ж   ж           styled.cpython-310.pyc
+    ж       ж   ж   ж           syntax.cpython-310.pyc
+    ж       ж   ж   ж           table.cpython-310.pyc
+    ж       ж   ж   ж           terminal_theme.cpython-310.pyc
+    ж       ж   ж   ж           text.cpython-310.pyc
+    ж       ж   ж   ж           theme.cpython-310.pyc
+    ж       ж   ж   ж           themes.cpython-310.pyc
+    ж       ж   ж   ж           traceback.cpython-310.pyc
+    ж       ж   ж   ж           tree.cpython-310.pyc
+    ж       ж   ж   ж           _cell_widths.cpython-310.pyc
+    ж       ж   ж   ж           _emoji_codes.cpython-310.pyc
+    ж       ж   ж   ж           _emoji_replace.cpython-310.pyc
+    ж       ж   ж   ж           _export_format.cpython-310.pyc
+    ж       ж   ж   ж           _extension.cpython-310.pyc
+    ж       ж   ж   ж           _inspect.cpython-310.pyc
+    ж       ж   ж   ж           _log_render.cpython-310.pyc
+    ж       ж   ж   ж           _loop.cpython-310.pyc
+    ж       ж   ж   ж           _null_file.cpython-310.pyc
+    ж       ж   ж   ж           _palettes.cpython-310.pyc
+    ж       ж   ж   ж           _pick.cpython-310.pyc
+    ж       ж   ж   ж           _ratio.cpython-310.pyc
+    ж       ж   ж   ж           _spinners.cpython-310.pyc
+    ж       ж   ж   ж           _stack.cpython-310.pyc
+    ж       ж   ж   ж           _timer.cpython-310.pyc
+    ж       ж   ж   ж           _win32_console.cpython-310.pyc
+    ж       ж   ж   ж           _windows.cpython-310.pyc
+    ж       ж   ж   ж           _windows_renderer.cpython-310.pyc
+    ж       ж   ж   ж           _wrap.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           __main__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---tenacity
+    ж       ж   ж   ж   ж   after.py
+    ж       ж   ж   ж   ж   before.py
+    ж       ж   ж   ж   ж   before_sleep.py
+    ж       ж   ж   ж   ж   nap.py
+    ж       ж   ж   ж   ж   retry.py
+    ж       ж   ж   ж   ж   stop.py
+    ж       ж   ж   ж   ж   tornadoweb.py
+    ж       ж   ж   ж   ж   wait.py
+    ж       ж   ж   ж   ж   _asyncio.py
+    ж       ж   ж   ж   ж   _utils.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           after.cpython-310.pyc
+    ж       ж   ж   ж           before.cpython-310.pyc
+    ж       ж   ж   ж           before_sleep.cpython-310.pyc
+    ж       ж   ж   ж           nap.cpython-310.pyc
+    ж       ж   ж   ж           retry.cpython-310.pyc
+    ж       ж   ж   ж           stop.cpython-310.pyc
+    ж       ж   ж   ж           tornadoweb.cpython-310.pyc
+    ж       ж   ж   ж           wait.cpython-310.pyc
+    ж       ж   ж   ж           _asyncio.cpython-310.pyc
+    ж       ж   ж   ж           _utils.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---tomli
+    ж       ж   ж   ж   ж   _parser.py
+    ж       ж   ж   ж   ж   _re.py
+    ж       ж   ж   ж   ж   _types.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           _parser.cpython-310.pyc
+    ж       ж   ж   ж           _re.cpython-310.pyc
+    ж       ж   ж   ж           _types.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---urllib3
+    ж       ж   ж   ж   ж   connection.py
+    ж       ж   ж   ж   ж   connectionpool.py
+    ж       ж   ж   ж   ж   exceptions.py
+    ж       ж   ж   ж   ж   fields.py
+    ж       ж   ж   ж   ж   filepost.py
+    ж       ж   ж   ж   ж   poolmanager.py
+    ж       ж   ж   ж   ж   request.py
+    ж       ж   ж   ж   ж   response.py
+    ж       ж   ж   ж   ж   _collections.py
+    ж       ж   ж   ж   ж   _version.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   +---contrib
+    ж       ж   ж   ж   ж   ж   appengine.py
+    ж       ж   ж   ж   ж   ж   ntlmpool.py
+    ж       ж   ж   ж   ж   ж   pyopenssl.py
+    ж       ж   ж   ж   ж   ж   securetransport.py
+    ж       ж   ж   ж   ж   ж   socks.py
+    ж       ж   ж   ж   ж   ж   _appengine_environ.py
+    ж       ж   ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   ж   
+    ж       ж   ж   ж   ж   +---_securetransport
+    ж       ж   ж   ж   ж   ж   ж   bindings.py
+    ж       ж   ж   ж   ж   ж   ж   low_level.py
+    ж       ж   ж   ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   ж   ж   
+    ж       ж   ж   ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж   ж   ж           bindings.cpython-310.pyc
+    ж       ж   ж   ж   ж   ж           low_level.cpython-310.pyc
+    ж       ж   ж   ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж   ж   ж           
+    ж       ж   ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж   ж           appengine.cpython-310.pyc
+    ж       ж   ж   ж   ж           ntlmpool.cpython-310.pyc
+    ж       ж   ж   ж   ж           pyopenssl.cpython-310.pyc
+    ж       ж   ж   ж   ж           securetransport.cpython-310.pyc
+    ж       ж   ж   ж   ж           socks.cpython-310.pyc
+    ж       ж   ж   ж   ж           _appengine_environ.cpython-310.pyc
+    ж       ж   ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж   ж           
+    ж       ж   ж   ж   +---packages
+    ж       ж   ж   ж   ж   ж   six.py
+    ж       ж   ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   ж   
+    ж       ж   ж   ж   ж   +---backports
+    ж       ж   ж   ж   ж   ж   ж   makefile.py
+    ж       ж   ж   ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   ж   ж   
+    ж       ж   ж   ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж   ж   ж           makefile.cpython-310.pyc
+    ж       ж   ж   ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж   ж   ж           
+    ж       ж   ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж   ж           six.cpython-310.pyc
+    ж       ж   ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж   ж           
+    ж       ж   ж   ж   +---util
+    ж       ж   ж   ж   ж   ж   connection.py
+    ж       ж   ж   ж   ж   ж   proxy.py
+    ж       ж   ж   ж   ж   ж   queue.py
+    ж       ж   ж   ж   ж   ж   request.py
+    ж       ж   ж   ж   ж   ж   response.py
+    ж       ж   ж   ж   ж   ж   retry.py
+    ж       ж   ж   ж   ж   ж   ssltransport.py
+    ж       ж   ж   ж   ж   ж   ssl_.py
+    ж       ж   ж   ж   ж   ж   ssl_match_hostname.py
+    ж       ж   ж   ж   ж   ж   timeout.py
+    ж       ж   ж   ж   ж   ж   url.py
+    ж       ж   ж   ж   ж   ж   wait.py
+    ж       ж   ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   ж   
+    ж       ж   ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж   ж           connection.cpython-310.pyc
+    ж       ж   ж   ж   ж           proxy.cpython-310.pyc
+    ж       ж   ж   ж   ж           queue.cpython-310.pyc
+    ж       ж   ж   ж   ж           request.cpython-310.pyc
+    ж       ж   ж   ж   ж           response.cpython-310.pyc
+    ж       ж   ж   ж   ж           retry.cpython-310.pyc
+    ж       ж   ж   ж   ж           ssltransport.cpython-310.pyc
+    ж       ж   ж   ж   ж           ssl_.cpython-310.pyc
+    ж       ж   ж   ж   ж           ssl_match_hostname.cpython-310.pyc
+    ж       ж   ж   ж   ж           timeout.cpython-310.pyc
+    ж       ж   ж   ж   ж           url.cpython-310.pyc
+    ж       ж   ж   ж   ж           wait.cpython-310.pyc
+    ж       ж   ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж   ж           
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           connection.cpython-310.pyc
+    ж       ж   ж   ж           connectionpool.cpython-310.pyc
+    ж       ж   ж   ж           exceptions.cpython-310.pyc
+    ж       ж   ж   ж           fields.cpython-310.pyc
+    ж       ж   ж   ж           filepost.cpython-310.pyc
+    ж       ж   ж   ж           poolmanager.cpython-310.pyc
+    ж       ж   ж   ж           request.cpython-310.pyc
+    ж       ж   ж   ж           response.cpython-310.pyc
+    ж       ж   ж   ж           _collections.cpython-310.pyc
+    ж       ж   ж   ж           _version.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---webencodings
+    ж       ж   ж   ж   ж   labels.py
+    ж       ж   ж   ж   ж   mklabels.py
+    ж       ж   ж   ж   ж   tests.py
+    ж       ж   ж   ж   ж   x_user_defined.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           labels.cpython-310.pyc
+    ж       ж   ж   ж           mklabels.cpython-310.pyc
+    ж       ж   ж   ж           tests.cpython-310.pyc
+    ж       ж   ж   ж           x_user_defined.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   L---__pycache__
+    ж       ж   ж           six.cpython-310.pyc
+    ж       ж   ж           typing_extensions.cpython-310.pyc
+    ж       ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж           
+    ж       ж   L---__pycache__
+    ж       ж           __init__.cpython-310.pyc
+    ж       ж           __main__.cpython-310.pyc
+    ж       ж           __pip-runner__.cpython-310.pyc
+    ж       ж           
+    ж       +---pip-23.0.1.dist-info
+    ж       ж       entry_points.txt
+    ж       ж       INSTALLER
+    ж       ж       LICENSE.txt
+    ж       ж       METADATA
+    ж       ж       RECORD
+    ж       ж       REQUESTED
+    ж       ж       top_level.txt
+    ж       ж       WHEEL
+    ж       ж       
+    ж       +---pkg_resources
+    ж       ж   ж   __init__.py
+    ж       ж   ж   
+    ж       ж   +---extern
+    ж       ж   ж   ж   __init__.py
+    ж       ж   ж   ж   
+    ж       ж   ж   L---__pycache__
+    ж       ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж           
+    ж       ж   +---_vendor
+    ж       ж   ж   ж   appdirs.py
+    ж       ж   ж   ж   zipp.py
+    ж       ж   ж   ж   __init__.py
+    ж       ж   ж   ж   
+    ж       ж   ж   +---importlib_resources
+    ж       ж   ж   ж   ж   abc.py
+    ж       ж   ж   ж   ж   readers.py
+    ж       ж   ж   ж   ж   simple.py
+    ж       ж   ж   ж   ж   _adapters.py
+    ж       ж   ж   ж   ж   _common.py
+    ж       ж   ж   ж   ж   _compat.py
+    ж       ж   ж   ж   ж   _itertools.py
+    ж       ж   ж   ж   ж   _legacy.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           abc.cpython-310.pyc
+    ж       ж   ж   ж           readers.cpython-310.pyc
+    ж       ж   ж   ж           simple.cpython-310.pyc
+    ж       ж   ж   ж           _adapters.cpython-310.pyc
+    ж       ж   ж   ж           _common.cpython-310.pyc
+    ж       ж   ж   ж           _compat.cpython-310.pyc
+    ж       ж   ж   ж           _itertools.cpython-310.pyc
+    ж       ж   ж   ж           _legacy.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---jaraco
+    ж       ж   ж   ж   ж   context.py
+    ж       ж   ж   ж   ж   functools.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   +---text
+    ж       ж   ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   ж   
+    ж       ж   ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж   ж           
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           context.cpython-310.pyc
+    ж       ж   ж   ж           functools.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---more_itertools
+    ж       ж   ж   ж   ж   more.py
+    ж       ж   ж   ж   ж   recipes.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           more.cpython-310.pyc
+    ж       ж   ж   ж           recipes.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---packaging
+    ж       ж   ж   ж   ж   markers.py
+    ж       ж   ж   ж   ж   requirements.py
+    ж       ж   ж   ж   ж   specifiers.py
+    ж       ж   ж   ж   ж   tags.py
+    ж       ж   ж   ж   ж   utils.py
+    ж       ж   ж   ж   ж   version.py
+    ж       ж   ж   ж   ж   _manylinux.py
+    ж       ж   ж   ж   ж   _musllinux.py
+    ж       ж   ж   ж   ж   _structures.py
+    ж       ж   ж   ж   ж   __about__.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           markers.cpython-310.pyc
+    ж       ж   ж   ж           requirements.cpython-310.pyc
+    ж       ж   ж   ж           specifiers.cpython-310.pyc
+    ж       ж   ж   ж           tags.cpython-310.pyc
+    ж       ж   ж   ж           utils.cpython-310.pyc
+    ж       ж   ж   ж           version.cpython-310.pyc
+    ж       ж   ж   ж           _manylinux.cpython-310.pyc
+    ж       ж   ж   ж           _musllinux.cpython-310.pyc
+    ж       ж   ж   ж           _structures.cpython-310.pyc
+    ж       ж   ж   ж           __about__.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---pyparsing
+    ж       ж   ж   ж   ж   actions.py
+    ж       ж   ж   ж   ж   common.py
+    ж       ж   ж   ж   ж   core.py
+    ж       ж   ж   ж   ж   exceptions.py
+    ж       ж   ж   ж   ж   helpers.py
+    ж       ж   ж   ж   ж   results.py
+    ж       ж   ж   ж   ж   testing.py
+    ж       ж   ж   ж   ж   unicode.py
+    ж       ж   ж   ж   ж   util.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   +---diagram
+    ж       ж   ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   ж   
+    ж       ж   ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж   ж           
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           actions.cpython-310.pyc
+    ж       ж   ж   ж           common.cpython-310.pyc
+    ж       ж   ж   ж           core.cpython-310.pyc
+    ж       ж   ж   ж           exceptions.cpython-310.pyc
+    ж       ж   ж   ж           helpers.cpython-310.pyc
+    ж       ж   ж   ж           results.cpython-310.pyc
+    ж       ж   ж   ж           testing.cpython-310.pyc
+    ж       ж   ж   ж           unicode.cpython-310.pyc
+    ж       ж   ж   ж           util.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   L---__pycache__
+    ж       ж   ж           appdirs.cpython-310.pyc
+    ж       ж   ж           zipp.cpython-310.pyc
+    ж       ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж           
+    ж       ж   L---__pycache__
+    ж       ж           __init__.cpython-310.pyc
+    ж       ж           
+    ж       +---setuptools
+    ж       ж   ж   archive_util.py
+    ж       ж   ж   build_meta.py
+    ж       ж   ж   cli-32.exe
+    ж       ж   ж   cli-64.exe
+    ж       ж   ж   cli-arm64.exe
+    ж       ж   ж   cli.exe
+    ж       ж   ж   depends.py
+    ж       ж   ж   dep_util.py
+    ж       ж   ж   discovery.py
+    ж       ж   ж   dist.py
+    ж       ж   ж   errors.py
+    ж       ж   ж   extension.py
+    ж       ж   ж   glob.py
+    ж       ж   ж   gui-32.exe
+    ж       ж   ж   gui-64.exe
+    ж       ж   ж   gui-arm64.exe
+    ж       ж   ж   gui.exe
+    ж       ж   ж   installer.py
+    ж       ж   ж   launch.py
+    ж       ж   ж   logging.py
+    ж       ж   ж   monkey.py
+    ж       ж   ж   msvc.py
+    ж       ж   ж   namespaces.py
+    ж       ж   ж   package_index.py
+    ж       ж   ж   py34compat.py
+    ж       ж   ж   sandbox.py
+    ж       ж   ж   script (dev).tmpl
+    ж       ж   ж   script.tmpl
+    ж       ж   ж   unicode_utils.py
+    ж       ж   ж   version.py
+    ж       ж   ж   wheel.py
+    ж       ж   ж   windows_support.py
+    ж       ж   ж   _deprecation_warning.py
+    ж       ж   ж   _entry_points.py
+    ж       ж   ж   _imp.py
+    ж       ж   ж   _importlib.py
+    ж       ж   ж   _itertools.py
+    ж       ж   ж   _path.py
+    ж       ж   ж   _reqs.py
+    ж       ж   ж   __init__.py
+    ж       ж   ж   
+    ж       ж   +---command
+    ж       ж   ж   ж   alias.py
+    ж       ж   ж   ж   bdist_egg.py
+    ж       ж   ж   ж   bdist_rpm.py
+    ж       ж   ж   ж   build.py
+    ж       ж   ж   ж   build_clib.py
+    ж       ж   ж   ж   build_ext.py
+    ж       ж   ж   ж   build_py.py
+    ж       ж   ж   ж   develop.py
+    ж       ж   ж   ж   dist_info.py
+    ж       ж   ж   ж   easy_install.py
+    ж       ж   ж   ж   editable_wheel.py
+    ж       ж   ж   ж   egg_info.py
+    ж       ж   ж   ж   install.py
+    ж       ж   ж   ж   install_egg_info.py
+    ж       ж   ж   ж   install_lib.py
+    ж       ж   ж   ж   install_scripts.py
+    ж       ж   ж   ж   launcher manifest.xml
+    ж       ж   ж   ж   py36compat.py
+    ж       ж   ж   ж   register.py
+    ж       ж   ж   ж   rotate.py
+    ж       ж   ж   ж   saveopts.py
+    ж       ж   ж   ж   sdist.py
+    ж       ж   ж   ж   setopt.py
+    ж       ж   ж   ж   test.py
+    ж       ж   ж   ж   upload.py
+    ж       ж   ж   ж   upload_docs.py
+    ж       ж   ж   ж   __init__.py
+    ж       ж   ж   ж   
+    ж       ж   ж   L---__pycache__
+    ж       ж   ж           alias.cpython-310.pyc
+    ж       ж   ж           bdist_egg.cpython-310.pyc
+    ж       ж   ж           bdist_rpm.cpython-310.pyc
+    ж       ж   ж           build.cpython-310.pyc
+    ж       ж   ж           build_clib.cpython-310.pyc
+    ж       ж   ж           build_ext.cpython-310.pyc
+    ж       ж   ж           build_py.cpython-310.pyc
+    ж       ж   ж           develop.cpython-310.pyc
+    ж       ж   ж           dist_info.cpython-310.pyc
+    ж       ж   ж           easy_install.cpython-310.pyc
+    ж       ж   ж           editable_wheel.cpython-310.pyc
+    ж       ж   ж           egg_info.cpython-310.pyc
+    ж       ж   ж           install.cpython-310.pyc
+    ж       ж   ж           install_egg_info.cpython-310.pyc
+    ж       ж   ж           install_lib.cpython-310.pyc
+    ж       ж   ж           install_scripts.cpython-310.pyc
+    ж       ж   ж           py36compat.cpython-310.pyc
+    ж       ж   ж           register.cpython-310.pyc
+    ж       ж   ж           rotate.cpython-310.pyc
+    ж       ж   ж           saveopts.cpython-310.pyc
+    ж       ж   ж           sdist.cpython-310.pyc
+    ж       ж   ж           setopt.cpython-310.pyc
+    ж       ж   ж           test.cpython-310.pyc
+    ж       ж   ж           upload.cpython-310.pyc
+    ж       ж   ж           upload_docs.cpython-310.pyc
+    ж       ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж           
+    ж       ж   +---config
+    ж       ж   ж   ж   expand.py
+    ж       ж   ж   ж   pyprojecttoml.py
+    ж       ж   ж   ж   setupcfg.py
+    ж       ж   ж   ж   _apply_pyprojecttoml.py
+    ж       ж   ж   ж   __init__.py
+    ж       ж   ж   ж   
+    ж       ж   ж   +---_validate_pyproject
+    ж       ж   ж   ж   ж   error_reporting.py
+    ж       ж   ж   ж   ж   extra_validations.py
+    ж       ж   ж   ж   ж   fastjsonschema_exceptions.py
+    ж       ж   ж   ж   ж   fastjsonschema_validations.py
+    ж       ж   ж   ж   ж   formats.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           error_reporting.cpython-310.pyc
+    ж       ж   ж   ж           extra_validations.cpython-310.pyc
+    ж       ж   ж   ж           fastjsonschema_exceptions.cpython-310.pyc
+    ж       ж   ж   ж           fastjsonschema_validations.cpython-310.pyc
+    ж       ж   ж   ж           formats.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   L---__pycache__
+    ж       ж   ж           expand.cpython-310.pyc
+    ж       ж   ж           pyprojecttoml.cpython-310.pyc
+    ж       ж   ж           setupcfg.cpython-310.pyc
+    ж       ж   ж           _apply_pyprojecttoml.cpython-310.pyc
+    ж       ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж           
+    ж       ж   +---extern
+    ж       ж   ж   ж   __init__.py
+    ж       ж   ж   ж   
+    ж       ж   ж   L---__pycache__
+    ж       ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж           
+    ж       ж   +---_distutils
+    ж       ж   ж   ж   archive_util.py
+    ж       ж   ж   ж   bcppcompiler.py
+    ж       ж   ж   ж   ccompiler.py
+    ж       ж   ж   ж   cmd.py
+    ж       ж   ж   ж   config.py
+    ж       ж   ж   ж   core.py
+    ж       ж   ж   ж   cygwinccompiler.py
+    ж       ж   ж   ж   debug.py
+    ж       ж   ж   ж   dep_util.py
+    ж       ж   ж   ж   dir_util.py
+    ж       ж   ж   ж   dist.py
+    ж       ж   ж   ж   errors.py
+    ж       ж   ж   ж   extension.py
+    ж       ж   ж   ж   fancy_getopt.py
+    ж       ж   ж   ж   filelist.py
+    ж       ж   ж   ж   file_util.py
+    ж       ж   ж   ж   log.py
+    ж       ж   ж   ж   msvc9compiler.py
+    ж       ж   ж   ж   msvccompiler.py
+    ж       ж   ж   ж   py38compat.py
+    ж       ж   ж   ж   py39compat.py
+    ж       ж   ж   ж   spawn.py
+    ж       ж   ж   ж   sysconfig.py
+    ж       ж   ж   ж   text_file.py
+    ж       ж   ж   ж   unixccompiler.py
+    ж       ж   ж   ж   util.py
+    ж       ж   ж   ж   version.py
+    ж       ж   ж   ж   versionpredicate.py
+    ж       ж   ж   ж   _collections.py
+    ж       ж   ж   ж   _functools.py
+    ж       ж   ж   ж   _macos_compat.py
+    ж       ж   ж   ж   _msvccompiler.py
+    ж       ж   ж   ж   __init__.py
+    ж       ж   ж   ж   
+    ж       ж   ж   +---command
+    ж       ж   ж   ж   ж   bdist.py
+    ж       ж   ж   ж   ж   bdist_dumb.py
+    ж       ж   ж   ж   ж   bdist_rpm.py
+    ж       ж   ж   ж   ж   build.py
+    ж       ж   ж   ж   ж   build_clib.py
+    ж       ж   ж   ж   ж   build_ext.py
+    ж       ж   ж   ж   ж   build_py.py
+    ж       ж   ж   ж   ж   build_scripts.py
+    ж       ж   ж   ж   ж   check.py
+    ж       ж   ж   ж   ж   clean.py
+    ж       ж   ж   ж   ж   config.py
+    ж       ж   ж   ж   ж   install.py
+    ж       ж   ж   ж   ж   install_data.py
+    ж       ж   ж   ж   ж   install_egg_info.py
+    ж       ж   ж   ж   ж   install_headers.py
+    ж       ж   ж   ж   ж   install_lib.py
+    ж       ж   ж   ж   ж   install_scripts.py
+    ж       ж   ж   ж   ж   py37compat.py
+    ж       ж   ж   ж   ж   register.py
+    ж       ж   ж   ж   ж   sdist.py
+    ж       ж   ж   ж   ж   upload.py
+    ж       ж   ж   ж   ж   _framework_compat.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           bdist.cpython-310.pyc
+    ж       ж   ж   ж           bdist_dumb.cpython-310.pyc
+    ж       ж   ж   ж           bdist_rpm.cpython-310.pyc
+    ж       ж   ж   ж           build.cpython-310.pyc
+    ж       ж   ж   ж           build_clib.cpython-310.pyc
+    ж       ж   ж   ж           build_ext.cpython-310.pyc
+    ж       ж   ж   ж           build_py.cpython-310.pyc
+    ж       ж   ж   ж           build_scripts.cpython-310.pyc
+    ж       ж   ж   ж           check.cpython-310.pyc
+    ж       ж   ж   ж           clean.cpython-310.pyc
+    ж       ж   ж   ж           config.cpython-310.pyc
+    ж       ж   ж   ж           install.cpython-310.pyc
+    ж       ж   ж   ж           install_data.cpython-310.pyc
+    ж       ж   ж   ж           install_egg_info.cpython-310.pyc
+    ж       ж   ж   ж           install_headers.cpython-310.pyc
+    ж       ж   ж   ж           install_lib.cpython-310.pyc
+    ж       ж   ж   ж           install_scripts.cpython-310.pyc
+    ж       ж   ж   ж           py37compat.cpython-310.pyc
+    ж       ж   ж   ж           register.cpython-310.pyc
+    ж       ж   ж   ж           sdist.cpython-310.pyc
+    ж       ж   ж   ж           upload.cpython-310.pyc
+    ж       ж   ж   ж           _framework_compat.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   L---__pycache__
+    ж       ж   ж           archive_util.cpython-310.pyc
+    ж       ж   ж           bcppcompiler.cpython-310.pyc
+    ж       ж   ж           ccompiler.cpython-310.pyc
+    ж       ж   ж           cmd.cpython-310.pyc
+    ж       ж   ж           config.cpython-310.pyc
+    ж       ж   ж           core.cpython-310.pyc
+    ж       ж   ж           cygwinccompiler.cpython-310.pyc
+    ж       ж   ж           debug.cpython-310.pyc
+    ж       ж   ж           dep_util.cpython-310.pyc
+    ж       ж   ж           dir_util.cpython-310.pyc
+    ж       ж   ж           dist.cpython-310.pyc
+    ж       ж   ж           errors.cpython-310.pyc
+    ж       ж   ж           extension.cpython-310.pyc
+    ж       ж   ж           fancy_getopt.cpython-310.pyc
+    ж       ж   ж           filelist.cpython-310.pyc
+    ж       ж   ж           file_util.cpython-310.pyc
+    ж       ж   ж           log.cpython-310.pyc
+    ж       ж   ж           msvc9compiler.cpython-310.pyc
+    ж       ж   ж           msvccompiler.cpython-310.pyc
+    ж       ж   ж           py38compat.cpython-310.pyc
+    ж       ж   ж           py39compat.cpython-310.pyc
+    ж       ж   ж           spawn.cpython-310.pyc
+    ж       ж   ж           sysconfig.cpython-310.pyc
+    ж       ж   ж           text_file.cpython-310.pyc
+    ж       ж   ж           unixccompiler.cpython-310.pyc
+    ж       ж   ж           util.cpython-310.pyc
+    ж       ж   ж           version.cpython-310.pyc
+    ж       ж   ж           versionpredicate.cpython-310.pyc
+    ж       ж   ж           _collections.cpython-310.pyc
+    ж       ж   ж           _functools.cpython-310.pyc
+    ж       ж   ж           _macos_compat.cpython-310.pyc
+    ж       ж   ж           _msvccompiler.cpython-310.pyc
+    ж       ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж           
+    ж       ж   +---_vendor
+    ж       ж   ж   ж   ordered_set.py
+    ж       ж   ж   ж   typing_extensions.py
+    ж       ж   ж   ж   zipp.py
+    ж       ж   ж   ж   __init__.py
+    ж       ж   ж   ж   
+    ж       ж   ж   +---importlib_metadata
+    ж       ж   ж   ж   ж   _adapters.py
+    ж       ж   ж   ж   ж   _collections.py
+    ж       ж   ж   ж   ж   _compat.py
+    ж       ж   ж   ж   ж   _functools.py
+    ж       ж   ж   ж   ж   _itertools.py
+    ж       ж   ж   ж   ж   _meta.py
+    ж       ж   ж   ж   ж   _text.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           _adapters.cpython-310.pyc
+    ж       ж   ж   ж           _collections.cpython-310.pyc
+    ж       ж   ж   ж           _compat.cpython-310.pyc
+    ж       ж   ж   ж           _functools.cpython-310.pyc
+    ж       ж   ж   ж           _itertools.cpython-310.pyc
+    ж       ж   ж   ж           _meta.cpython-310.pyc
+    ж       ж   ж   ж           _text.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---importlib_resources
+    ж       ж   ж   ж   ж   abc.py
+    ж       ж   ж   ж   ж   readers.py
+    ж       ж   ж   ж   ж   simple.py
+    ж       ж   ж   ж   ж   _adapters.py
+    ж       ж   ж   ж   ж   _common.py
+    ж       ж   ж   ж   ж   _compat.py
+    ж       ж   ж   ж   ж   _itertools.py
+    ж       ж   ж   ж   ж   _legacy.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           abc.cpython-310.pyc
+    ж       ж   ж   ж           readers.cpython-310.pyc
+    ж       ж   ж   ж           simple.cpython-310.pyc
+    ж       ж   ж   ж           _adapters.cpython-310.pyc
+    ж       ж   ж   ж           _common.cpython-310.pyc
+    ж       ж   ж   ж           _compat.cpython-310.pyc
+    ж       ж   ж   ж           _itertools.cpython-310.pyc
+    ж       ж   ж   ж           _legacy.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---jaraco
+    ж       ж   ж   ж   ж   context.py
+    ж       ж   ж   ж   ж   functools.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   +---text
+    ж       ж   ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   ж   
+    ж       ж   ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж   ж           
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           context.cpython-310.pyc
+    ж       ж   ж   ж           functools.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---more_itertools
+    ж       ж   ж   ж   ж   more.py
+    ж       ж   ж   ж   ж   recipes.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           more.cpython-310.pyc
+    ж       ж   ж   ж           recipes.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---packaging
+    ж       ж   ж   ж   ж   markers.py
+    ж       ж   ж   ж   ж   requirements.py
+    ж       ж   ж   ж   ж   specifiers.py
+    ж       ж   ж   ж   ж   tags.py
+    ж       ж   ж   ж   ж   utils.py
+    ж       ж   ж   ж   ж   version.py
+    ж       ж   ж   ж   ж   _manylinux.py
+    ж       ж   ж   ж   ж   _musllinux.py
+    ж       ж   ж   ж   ж   _structures.py
+    ж       ж   ж   ж   ж   __about__.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           markers.cpython-310.pyc
+    ж       ж   ж   ж           requirements.cpython-310.pyc
+    ж       ж   ж   ж           specifiers.cpython-310.pyc
+    ж       ж   ж   ж           tags.cpython-310.pyc
+    ж       ж   ж   ж           utils.cpython-310.pyc
+    ж       ж   ж   ж           version.cpython-310.pyc
+    ж       ж   ж   ж           _manylinux.cpython-310.pyc
+    ж       ж   ж   ж           _musllinux.cpython-310.pyc
+    ж       ж   ж   ж           _structures.cpython-310.pyc
+    ж       ж   ж   ж           __about__.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---pyparsing
+    ж       ж   ж   ж   ж   actions.py
+    ж       ж   ж   ж   ж   common.py
+    ж       ж   ж   ж   ж   core.py
+    ж       ж   ж   ж   ж   exceptions.py
+    ж       ж   ж   ж   ж   helpers.py
+    ж       ж   ж   ж   ж   results.py
+    ж       ж   ж   ж   ж   testing.py
+    ж       ж   ж   ж   ж   unicode.py
+    ж       ж   ж   ж   ж   util.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   +---diagram
+    ж       ж   ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   ж   
+    ж       ж   ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж   ж           
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           actions.cpython-310.pyc
+    ж       ж   ж   ж           common.cpython-310.pyc
+    ж       ж   ж   ж           core.cpython-310.pyc
+    ж       ж   ж   ж           exceptions.cpython-310.pyc
+    ж       ж   ж   ж           helpers.cpython-310.pyc
+    ж       ж   ж   ж           results.cpython-310.pyc
+    ж       ж   ж   ж           testing.cpython-310.pyc
+    ж       ж   ж   ж           unicode.cpython-310.pyc
+    ж       ж   ж   ж           util.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   +---tomli
+    ж       ж   ж   ж   ж   _parser.py
+    ж       ж   ж   ж   ж   _re.py
+    ж       ж   ж   ж   ж   _types.py
+    ж       ж   ж   ж   ж   __init__.py
+    ж       ж   ж   ж   ж   
+    ж       ж   ж   ж   L---__pycache__
+    ж       ж   ж   ж           _parser.cpython-310.pyc
+    ж       ж   ж   ж           _re.cpython-310.pyc
+    ж       ж   ж   ж           _types.cpython-310.pyc
+    ж       ж   ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж   ж           
+    ж       ж   ж   L---__pycache__
+    ж       ж   ж           ordered_set.cpython-310.pyc
+    ж       ж   ж           typing_extensions.cpython-310.pyc
+    ж       ж   ж           zipp.cpython-310.pyc
+    ж       ж   ж           __init__.cpython-310.pyc
+    ж       ж   ж           
+    ж       ж   L---__pycache__
+    ж       ж           archive_util.cpython-310.pyc
+    ж       ж           build_meta.cpython-310.pyc
+    ж       ж           depends.cpython-310.pyc
+    ж       ж           dep_util.cpython-310.pyc
+    ж       ж           discovery.cpython-310.pyc
+    ж       ж           dist.cpython-310.pyc
+    ж       ж           errors.cpython-310.pyc
+    ж       ж           extension.cpython-310.pyc
+    ж       ж           glob.cpython-310.pyc
+    ж       ж           installer.cpython-310.pyc
+    ж       ж           launch.cpython-310.pyc
+    ж       ж           logging.cpython-310.pyc
+    ж       ж           monkey.cpython-310.pyc
+    ж       ж           msvc.cpython-310.pyc
+    ж       ж           namespaces.cpython-310.pyc
+    ж       ж           package_index.cpython-310.pyc
+    ж       ж           py34compat.cpython-310.pyc
+    ж       ж           sandbox.cpython-310.pyc
+    ж       ж           unicode_utils.cpython-310.pyc
+    ж       ж           version.cpython-310.pyc
+    ж       ж           wheel.cpython-310.pyc
+    ж       ж           windows_support.cpython-310.pyc
+    ж       ж           _deprecation_warning.cpython-310.pyc
+    ж       ж           _entry_points.cpython-310.pyc
+    ж       ж           _imp.cpython-310.pyc
+    ж       ж           _importlib.cpython-310.pyc
+    ж       ж           _itertools.cpython-310.pyc
+    ж       ж           _path.cpython-310.pyc
+    ж       ж           _reqs.cpython-310.pyc
+    ж       ж           __init__.cpython-310.pyc
+    ж       ж           
+    ж       +---setuptools-65.5.0.dist-info
+    ж       ж       entry_points.txt
+    ж       ж       INSTALLER
+    ж       ж       LICENSE
+    ж       ж       METADATA
+    ж       ж       RECORD
+    ж       ж       REQUESTED
+    ж       ж       top_level.txt
+    ж       ж       WHEEL
+    ж       ж       
+    ж       L---_distutils_hack
+    ж           ж   override.py
+    ж           ж   __init__.py
+    ж           ж   
+    ж           L---__pycache__
+    ж                   override.cpython-310.pyc
+    ж                   __init__.cpython-310.pyc
+    ж                   
+    L---Scripts
+            activate
+            activate.bat
+            Activate.ps1
+            deactivate.bat
+            pip.exe
+            pip3.10.exe
+            pip3.exe
+            python.exe
+            pythonw.exe
+            

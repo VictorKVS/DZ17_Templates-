@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Виртуальное окружение
+venv/
+env/
+ENV/
+
+# База данных
+db.sqlite3
+db.sqlite3-journal
+
+# Медиа-файлы (загружаемые пользователями)
+media/
+
+# Логи
+logs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Django
+*.pot
+*.mo
+
+# Jupyter Notebook
+.ipynb_checkpoints
