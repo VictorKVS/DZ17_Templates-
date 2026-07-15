@@ -39,16 +39,15 @@
 - Эстетика и функциональность интерфейса (CSS Grid, адаптивность): **20%**
 
 ---
-
 ## 2. 🏛️ Архитектура и Схемы
 
 ### Component Diagram (C4 Model)
 
 ```mermaid
 graph TD
-    Client["🌐 Клиент / Браузер"] -->|"HTTP GET /"| Router["🔀 URL Router config/urls.py"]
-    Router -->|"/"| ViewList["️ View: product_list"]
-    Router -->|"/product/<id>/"| ViewDetail["️ View: product_detail"]
+    Client[" Клиент / Браузер"] -->|"HTTP GET /"| Router["🔀 URL Router config/urls.py"]
+    Router -->|"/"| ViewList["👁️ View: product_list"]
+    Router -->|"/product/<id>/"| ViewDetail["👁️ View: product_detail"]
     
     ViewList -->|"QuerySet.all()"| Model[("🗄️ Model: Product")]
     ViewDetail -->|"QuerySet.get(id)"| Model
@@ -61,7 +60,7 @@ graph TD
     TmplList -.->|"Наследование"| TmplBase["📄 Template: base.html"]
     TmplDetail -.->|"Наследование"| TmplBase
     
-    TmplBase -->|"{% static %}"| CSS[" Static: style.css"]
+    TmplBase -->|"{% static %}"| CSS["🎨 Static: style.css"]
     
     CSS --> Client
     TmplList --> Client
